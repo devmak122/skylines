@@ -30,7 +30,7 @@ const Header = () => (
           </li>
           <li>
             <Link 
-              to="/services" 
+              to="/Products" 
               className="text-primary  hover:text-green-400 transition-colors duration-300"
             >
               Services

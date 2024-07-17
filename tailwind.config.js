@@ -4,6 +4,9 @@
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
       extend: {
+        backgroundImage:{
+          "footer-bg":"url(./assets/images/footer_bg.svg)",
+        },
         screens: {
           laptop: { min: "1026px", max: "1920px" },
           tablet: { min: "800px", max: "1025px" },
@@ -39,7 +42,7 @@
       colors: {
         transparent: "transparent",
         current: "currentColor",
-        primary: "#214284",
+        primary: "#39B54A",
         secondary: "#FFBB6B",
         tertiary: "#FDF3DA",
         white: "#FFFFFF",
