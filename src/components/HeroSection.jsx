@@ -1,15 +1,22 @@
 import React from 'react';
-import Rectangle from "../assets/images/Rectangle.svg"
+import Rectangle from "../assets/images/Rectangle.svg";
 
 const HeroSection = () => (
-  <div 
-    className="relative h-screen bg-cover bg-center bg-no-repeat" 
-    style={{ backgroundImage: 'url(../assets/images/Rectangle.svg)' }}
-  >
-       {/* <img src={logo} alt="logo" className="h-10 mr-3" /> */}
-    <div className="absolute inset-0 bg-black opacity-50"></div>
+  <div className="relative">
+    {/* Background Image */}
+    <div
+      className="absolute inset-0 bg-black  bg-opacity-50 bg-cover bg-no-repeat flex items-center justify-center"
+      style={{ backgroundImage: `url(${Rectangle})`, height: '70vh' }}
+    >
+      
+    <div className="absolute inset-0 bg-black opacity-50 "></div>
+    </div>
+
+    {/* Overlay */}
+
+    {/* Content */}
     <div className="container mx-auto relative z-10 flex items-center justify-between h-full px-4">
-      <div className="text-white">
+      <div className="text-white max-w-lg">
         <h1 className="text-4xl font-bold mb-4">
           One of the most trusted companies in India
         </h1>
@@ -20,43 +27,43 @@ const HeroSection = () => (
           View Products
         </button>
       </div>
-      <div className="bg-green-700 bg-opacity-80 p-8 rounded-lg text-white">
+      <div className="bg-green-700 bg-opacity-80 p-8 rounded-lg text-white max-w-md">
         <h3 className="text-2xl font-semibold mb-4">Connect With Us</h3>
-        <form>
-          <div className="mb-4">
+        <form className="space-y-4">
+          <div>
             <label className="block mb-2" htmlFor="name">Full Name</label>
-            <input 
-              type="text" 
-              id="name" 
+            <input
+              type="text"
+              id="name"
               className="w-full p-2 rounded border border-gray-300 text-gray-800"
             />
           </div>
-          <div className="mb-4">
+          <div>
             <label className="block mb-2" htmlFor="email">Enter Email Address</label>
-            <input 
-              type="email" 
-              id="email" 
+            <input
+              type="email"
+              id="email"
               className="w-full p-2 rounded border border-gray-300 text-gray-800"
             />
           </div>
-          <div className="mb-4">
+          <div>
             <label className="block mb-2" htmlFor="phone">Mobile Number</label>
-            <input 
-              type="tel" 
-              id="phone" 
+            <input
+              type="tel"
+              id="phone"
               className="w-full p-2 rounded border border-gray-300 text-gray-800"
             />
           </div>
-          <div className="mb-4">
+          <div>
             <label className="block mb-2" htmlFor="city">Area, City</label>
-            <input 
-              type="text" 
-              id="city" 
+            <input
+              type="text"
+              id="city"
               className="w-full p-2 rounded border border-gray-300 text-gray-800"
             />
           </div>
-          <button 
-            type="submit" 
+          <button
+            type="submit"
             className="bg-orange-500 w-full p-2 rounded text-white hover:bg-orange-600 transition-colors duration-300"
           >
             Submit

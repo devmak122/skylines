@@ -20,43 +20,43 @@ const Product = () => {
       <div class=" grid grid-cols-3 gap-6 md:grid-cols-2 lg:grid-cols-2 mx-4 my-4 ml-11">
 
         <div class="flex flex-col items-center justify-center p-4 bg-white rounded-lg mx-2 my-2 leading-10 ">
-            <p class="text-[35px] font-bold text-customGreen mt-0 mb-10  ">20 MVA Core Coil</p>
+            <p class="text-[35px] font-bold text-primary mt-0 mb-10  ">20 MVA Core Coil</p>
             <img src={pro4} alt="pro4" class="h-[488px] w-[650px]"/>
-            <p class="text-[22px] font-semibold text-customGreen mt-7 mb-4">20 MVA Core Coil Assembly Work</p>
+            <p class="text-[22px] font-semibold text-primary mt-7 mb-4">20 MVA Core Coil Assembly Work</p>
             <button class="bg-orange-500 text-white px-4 rounded-lg border-none"><label>View Products</label></button>
         </div>
         <div class="flex flex-col items-center justify-center p-4 bg-white  rounded-lg mx-2 my-2 leading-10">
-            <p class="text-[35px] font-bold text-customGreen mt-0 mb-10 my-10">200 MVA Core Coil</p>
+            <p class="text-[35px] font-bold text-primary mt-0 mb-10 my-10">200 MVA Core Coil</p>
             <img src={product4} alt="product4" class="h-[488px] w-[650px]"/>
-            <p class="text-[22px] font-semibold text-customGreen mt-7 mb-4">200 MVA Core Coil Assembly Work</p>
+            <p class="text-[22px] font-semibold text-primary mt-7 mb-4">200 MVA Core Coil Assembly Work</p>
             <button class="bg-orange-500 text-white px-4 rounded-lg border-none"><label>View Products</label></button>
 
         </div>
         <div class="flex flex-col items-center justify-center p-4 bg-white  rounded-lg   mx-2 my-2 leading-10">
-            <p class="text-[35px] font-bold text-customGreen mt-0 mb-10 my-10">31.5 MVA Core Coil</p>
+            <p class="text-[35px] font-bold text-primary mt-0 mb-10 my-10">31.5 MVA Core Coil</p>
             <img src={pro3} alt="pro3" class="h-[488px] w-[650px]"/>
-            <p class="text-[22px] font-semibold text-customGreen mt-7 mb-4">31.5 MVA Core Coil Assembly Work</p>
+            <p class="text-[22px] font-semibold text-primary mt-7 mb-4">31.5 MVA Core Coil Assembly Work</p>
             <button class="bg-orange-500 text-white px-4 rounded-lg border-none"><label>View Products</label></button>
 
         </div>
         <div class="flex flex-col items-center justify-center p-4 bg-white  rounded-lg   mx-2 my-2 leading-10">
-            <p class="text-[35px] font-bold text-customGreen mt-0 mb-10 my-10">25 MVA Core Coil</p>
+            <p class="text-[35px] font-bold text-primary mt-0 mb-10 my-10">25 MVA Core Coil</p>
             <img src={product1} alt="product1" class="h-[488px] w-[650px]"/>
-            <p class="text-[22px] font-semibold text-customGreen mt-7 mb-4">20 MVA Core Coil Assembly Work</p>
+            <p class="text-[22px] font-semibold text-primary mt-7 mb-4">20 MVA Core Coil Assembly Work</p>
             <button class="bg-orange-500 text-white px-4 rounded-lg border-none"><label>View Products</label></button>
 
         </div>
         <div class="flex flex-col items-center justify-center p-4 bg-white  rounded-lg   mx-2 my-2 leading-10">
-            <p class="text-[35px] font-bold text-customGreen mt-0 mb-10 my-10">25 MVA Core Transformer</p>
+            <p class="text-[35px] font-bold text-primary mt-0 mb-10 my-10">25 MVA Core Transformer</p>
             <img src={pro5} alt="pro5" class="h-[488px] w-[650px]"/>
-            <p class="text-[22px] font-semibold text-customGreen mt-7 mb-4">Repairing of 25 MVA Transformer</p>
+            <p class="text-[22px] font-semibold text-primary mt-7 mb-4">Repairing of 25 MVA Transformer</p>
             <button class="bg-orange-500 text-white px-4 rounded-lg border-none"><label>View Products</label></button>
 
         </div>
         <div class="flex flex-col items-center justify-center p-4 bg-white  rounded-lg   mx-2 my-2 leading-10">
-            <p class="text-[35px] font-bold text-customGreen mt-0 mb-10 my-10">11 MVA Furnace</p>
+            <p class="text-[35px] font-bold text-primary mt-0 mb-10 my-10">11 MVA Furnace</p>
                 <img src={pro6} alt="pro6" class="h-[488px] w-[650px]"/>
-                <p class="text-[22px] font-semibold text-customGreen mt-7 mb-4">11 MVA Furnace Transformer</p>
+                <p class="text-[22px] font-semibold text-primary mt-7 mb-4">11 MVA Furnace Transformer</p>
                 <button class="bg-orange-500 text-white px-4 rounded-lg border-none"><label>View Products</label></button>
 
             </div>

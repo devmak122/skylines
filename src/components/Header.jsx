@@ -1,65 +1,76 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import logo from "../assets/images/logo.svg"
+import { NavLink } from 'react-router-dom';
+import logo from "../assets/images/logo.svg";
 
 const Header = () => (
   <header className="bg-white shadow-md">
     <div className="container mx-auto flex justify-between items-center p-4">
       <div className="flex items-center">
-        <img src={logo} alt="logo" className="h-12 mr-3" />
-       
-
+        <NavLink to="/" activeClassName="text-green-400">
+          <img src={logo} alt="logo" className="h-12 mr-3" />
+        </NavLink>
       </div>
       <nav>
-        <ul className="flex  text-2xl space-x-20">
+        <ul className="flex text-2xl space-x-20">
           <li>
-            <Link 
-              to="/" 
-              className="text-primary  hover:text-green-400 transition-colors duration-300"
+            <NavLink
+              to="/"
+              activeClassName="text-green-400"
+              className="text-primary hover:text-green-400 transition-colors duration-300"
+              exact
             >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link 
-              to="/about" 
-              className="text-primary  hover:text-green-400 transition-colors duration-300"
+            <NavLink
+              to="/about"
+              activeClassName="text-green-400"
+              className="text-primary hover:text-green-400 transition-colors duration-300"
+              exact
             >
               About
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link 
-              to="/Products" 
-              className="text-primary  hover:text-green-400 transition-colors duration-300"
+            <NavLink
+              to="/products"
+              activeClassName="text-green-400"
+              className="text-primary hover:text-green-400 transition-colors duration-300"
+              exact
             >
-              Services
-            </Link>
+              Products
+            </NavLink>
           </li>
           <li>
-            <Link 
-              to="/clients" 
-              className="text-primary  hover:text-green-400 transition-colors duration-300"
+            <NavLink
+              to="/clients"
+              activeClassName="text-green-400"
+              className="text-primary hover:text-green-400 transition-colors duration-300"
+              exact
             >
               Clients
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link 
-              to="/contact" 
-              className="text-primary  hover:text-green-400  transition-colors duration-300"
+            <NavLink
+              to="/contact"
+              activeClassName="text-green-400"
+              className="text-primary hover:text-green-400 transition-colors duration-300"
+              exact
             >
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
-      <Link 
-        to="/contact" 
+      <NavLink
+        to="/contact"
         className="bg-orange-500 text-white px-4 py-2 font-semibold rounded hover:text-primary transition-colors duration-300"
+        exact
       >
         Contact Us
-      </Link>
+      </NavLink>
     </div>
   </header>
 );

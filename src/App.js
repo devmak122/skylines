@@ -11,15 +11,48 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
-      <Header />
+
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/Product" element={<Product />} />
-        <Route path="/clients" element={<Clients />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={
+          <>
+            <Header />
+            <Home />
+            <Footer />
+          </>
+        } />
+        <Route path="/About" element={
+          <>
+          <Header />
+          <About />
+            <Footer />
+          </>
+        } />
+        <Route path="/Products" element={
+          <>
+            <Header />
+            <Product />
+            <Footer />
+          </>
+          
+         } />
+        <Route path="/clients" element={
+          <>
+          <Header />
+          <Clients />
+        <Footer />
+          </>
+        } />
+        <Route path="/contact" element={
+          
+          <>
+          
+          <Header/>
+          <Contact />
+            <Footer />
+          </>
+          } />
       </Routes>
-      <Footer />
+
     </Router>
   );
 }
