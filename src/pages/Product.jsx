@@ -1,69 +1,76 @@
 import React from 'react'
-import product_bg from "../assets/images/product_bg.jpg"
+import pro_bg from "../assets/images/pro_bg.png"
 import pro4 from "../assets/images/pro4.jpg"
 import product4 from "../assets/images/product2.jpg"
 import product1 from "../assets/images/product1.jpg"
 import pro3 from "../assets/images/pro3.jpg"
 import pro5 from "../assets/images/pro5.jpg"
-
 import pro6 from "../assets/images/pro6.jpg"
 
 const Product = () => {
   return (
     <div>
-          <div
-        className="bg-cover  bg-center  bg-no-repeat flex items-center justify-center h-80 laptop:h-96"
-        style={{ backgroundImage: `url(${product_bg})` }}
+      <div
+        className="w-full bg-black bg-opacity-50 justify-center bg-cover bg-center bg-no-repeat flex flex-col items-center"
+        style={{ backgroundImage: `url(${pro_bg})`, height: '50vh' }}
       >
-        <h1 className="text-white text-center font-bold text-4xl laptop:text-6xl py-16 laptop:py-24">
-          Product
-        </h1>
+        <h1 className="text-white text-center flex items-center justify-center font-bold text-6xl">Products</h1>
       </div>
-      <div class=" grid grid-cols-3 gap-6 md:grid-cols-2 lg:grid-cols-2 mx-4 my-4 ml-11">
-
-        <div class="flex flex-col items-center justify-center p-4 bg-white rounded-lg mx-2 my-2 leading-10 ">
-            <p class="text-[35px] font-bold text-primary mt-0 mb-10  ">20 MVA Core Coil</p>
-            <img src={pro4} alt="pro4" class="h-[488px] w-[650px]"/>
-            <p class="text-[22px] font-semibold text-primary mt-7 mb-4">20 MVA Core Coil Assembly Work</p>
-            <button class="bg-orange-500 text-white px-4 rounded-lg border-none"><label>View Products</label></button>
+      <div className="grid mobile:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-6 mx-4 my-4">
+        <div className="relative flex flex-col items-center justify-center p-4 bg-white rounded-lg leading-10">
+          <div className="absolute laptop:top-[-10px] laptop:left-[-20px] mobile:top-[10px] mobile:left-[10px] w-16 h-16 border-t-[8px] border-l-[8px] border-orange-500"></div>
+          <p className="text-[35px] font-bold text-primary mobile:text-center mt-0 mb-10 z-10">20 MVA Core Coil</p>
+          <img src={pro4} alt="pro4" className="w-full h-[300px] object-cover z-10" />
+          <div className="absolute laptop:bottom-[-10px] laptop:right-[-20px] mobile:bottom-[10px] mobile:right-[10px] w-16 h-16 border-b-[8px] border-r-[8px] border-orange-500"></div>
+          <p className="text-[22px] font-semibold text-primary mobile:text-center mt-7 mb-4 z-10">20 MVA Core Coil Assembly Work</p>
+          <button className="bg-orange-500 text-white px-4 py-2 rounded-lg border-none z-10"><label>View Products</label></button>
         </div>
-        <div class="flex flex-col items-center justify-center p-4 bg-white  rounded-lg mx-2 my-2 leading-10">
-            <p class="text-[35px] font-bold text-primary mt-0 mb-10 my-10">200 MVA Core Coil</p>
-            <img src={product4} alt="product4" class="h-[488px] w-[650px]"/>
-            <p class="text-[22px] font-semibold text-primary mt-7 mb-4">200 MVA Core Coil Assembly Work</p>
-            <button class="bg-orange-500 text-white px-4 rounded-lg border-none"><label>View Products</label></button>
 
+        <div className="relative flex flex-col items-center justify-center p-4 bg-white rounded-lg leading-10">
+          <div className="absolute laptop:top-[-10px] laptop:left-[-20px] mobile:top-[10px] mobile:left-[10px] w-16 h-16 border-t-[8px] border-l-[8px] border-orange-500"></div>
+          <p className="text-[35px] font-bold text-primary mobile:text-center mt-0 mb-10 z-10">200 MVA Core Coil</p>
+          <img src={product4} alt="product4" className="w-full h-[300px] object-cover z-10" />
+          <div className="absolute laptop:bottom-[-10px] laptop:right-[-20px] mobile:bottom-[10px] mobile:right-[10px] w-16 h-16 border-b-[8px] border-r-[8px] border-orange-500"></div>
+          <p className="text-[22px] font-semibold text-primary mobile:text-center mt-7 mb-4 z-10">200 MVA Core Coil Assembly Work</p>
+          <button className="bg-orange-500 text-white px-4 py-2 rounded-lg border-none z-10"><label>View Products</label></button>
         </div>
-        <div class="flex flex-col items-center justify-center p-4 bg-white  rounded-lg   mx-2 my-2 leading-10">
-            <p class="text-[35px] font-bold text-primary mt-0 mb-10 my-10">31.5 MVA Core Coil</p>
-            <img src={pro3} alt="pro3" class="h-[488px] w-[650px]"/>
-            <p class="text-[22px] font-semibold text-primary mt-7 mb-4">31.5 MVA Core Coil Assembly Work</p>
-            <button class="bg-orange-500 text-white px-4 rounded-lg border-none"><label>View Products</label></button>
 
+        <div className="relative flex flex-col items-center justify-center p-4 bg-white rounded-lg leading-10">
+          <div className="absolute laptop:top-[-10px] laptop:left-[-20px] mobile:top-[10px] mobile:left-[10px] w-16 h-16 border-t-[8px] border-l-[8px] border-orange-500"></div>
+          <p className="text-[35px] font-bold text-primary mobile:text-center mt-0 mb-10 z-10">31.5 MVA Core Coil</p>
+          <img src={pro3} alt="pro3" className="w-full h-[300px] object-cover z-10" />
+          <div className="absolute laptop:bottom-[-10px] laptop:right-[-20px] mobile:bottom-[10px] mobile:right-[10px] w-16 h-16 border-b-[8px] border-r-[8px] border-orange-500"></div>
+          <p className="text-[22px] font-semibold text-primary mobile:text-center mt-7 mb-4 z-10">31.5 MVA Core Coil Assembly Work</p>
+          <button className="bg-orange-500 text-white px-4 py-2 rounded-lg border-none z-10"><label>View Products</label></button>
         </div>
-        <div class="flex flex-col items-center justify-center p-4 bg-white  rounded-lg   mx-2 my-2 leading-10">
-            <p class="text-[35px] font-bold text-primary mt-0 mb-10 my-10">25 MVA Core Coil</p>
-            <img src={product1} alt="product1" class="h-[488px] w-[650px]"/>
-            <p class="text-[22px] font-semibold text-primary mt-7 mb-4">20 MVA Core Coil Assembly Work</p>
-            <button class="bg-orange-500 text-white px-4 rounded-lg border-none"><label>View Products</label></button>
 
+        <div className="relative flex flex-col items-center justify-center p-4 bg-white rounded-lg leading-10">
+          <div className="absolute laptop:top-[-10px] laptop:left-[-20px] mobile:top-[10px] mobile:left-[10px] w-16 h-16 border-t-[8px] border-l-[8px] border-orange-500"></div>
+          <p className="text-[35px] font-bold text-primary mobile:text-center mt-0 mb-10 z-10">25 MVA Core Coil</p>
+          <img src={product1} alt="product1" className="w-full h-[300px] object-cover z-10" />
+          <div className="absolute laptop:bottom-[-10px] laptop:right-[-20px] mobile:bottom-[10px] mobile:right-[10px] w-16 h-16 border-b-[8px] border-r-[8px] border-orange-500"></div>
+          <p className="text-[22px] font-semibold text-primary mobile:text-center mt-7 mb-4 z-10">25 MVA Core Coil Assembly Work</p>
+          <button className="bg-orange-500 text-white px-4 py-2 rounded-lg border-none z-10"><label>View Products</label></button>
         </div>
-        <div class="flex flex-col items-center justify-center p-4 bg-white  rounded-lg   mx-2 my-2 leading-10">
-            <p class="text-[35px] font-bold text-primary mt-0 mb-10 my-10">25 MVA Core Transformer</p>
-            <img src={pro5} alt="pro5" class="h-[488px] w-[650px]"/>
-            <p class="text-[22px] font-semibold text-primary mt-7 mb-4">Repairing of 25 MVA Transformer</p>
-            <button class="bg-orange-500 text-white px-4 rounded-lg border-none"><label>View Products</label></button>
 
+        <div className="relative flex flex-col items-center justify-center p-4 bg-white rounded-lg leading-10">
+          <div className="absolute laptop:top-[-10px] laptop:left-[-20px] mobile:top-[10px] mobile:left-[10px] w-16 h-16 border-t-[8px] border-l-[8px] border-orange-500"></div>
+          <p className="text-[35px] font-bold text-primary mobile:text-center mt-0 mb-10 z-10">25 MVA Core Transformer</p>
+          <img src={pro5} alt="pro5" className="w-full h-[300px] object-cover z-10" />
+          <div className="absolute laptop:bottom-[-10px] laptop:right-[-20px] mobile:bottom-[10px] mobile:right-[10px] w-16 h-16 border-b-[8px] border-r-[8px] border-orange-500"></div>
+          <p className="text-[22px] font-semibold text-primary mobile:text-center mt-7 mb-4 z-10">Repairing of 25 MVA Transformer</p>
+          <button className="bg-orange-500 text-white px-4 py-2 rounded-lg border-none z-10"><label>View Products</label></button>
         </div>
-        <div class="flex flex-col items-center justify-center p-4 bg-white  rounded-lg   mx-2 my-2 leading-10">
-            <p class="text-[35px] font-bold text-primary mt-0 mb-10 my-10">11 MVA Furnace</p>
-                <img src={pro6} alt="pro6" class="h-[488px] w-[650px]"/>
-                <p class="text-[22px] font-semibold text-primary mt-7 mb-4">11 MVA Furnace Transformer</p>
-                <button class="bg-orange-500 text-white px-4 rounded-lg border-none"><label>View Products</label></button>
 
-            </div>
+        <div className="relative flex flex-col items-center justify-center p-4 bg-white rounded-lg leading-10">
+          <div className="absolute laptop:top-[-10px] laptop:left-[-20px] mobile:top-[10px] mobile:left-[10px] w-16 h-16 border-t-[8px] border-l-[8px] border-orange-500"></div>
+          <p className="text-[35px] font-bold text-primary mobile:text-center mt-0 mb-10 z-10">11 MVA Furnace</p>
+          <img src={pro6} alt="pro6" className="w-full h-[300px] object-cover z-10" />
+          <div className="absolute laptop:bottom-[-10px] laptop:right-[-20px] mobile:bottom-[10px] mobile:right-[10px] w-16 h-16 border-b-[8px] border-r-[8px] border-orange-500"></div>
+          <p className="text-[22px] font-semibold text-primary mobile:text-center mt-7 mb-4 z-10">11 MVA Furnace Transformer</p>
+          <button className="bg-orange-500 text-white px-4 py-2 rounded-lg border-none z-10"><label>View Products</label></button>
+        </div>
       </div>
-      
     </div>
   )
 }

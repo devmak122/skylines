@@ -9,11 +9,17 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    if (window.innerWidth < 768) {
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
-    <header className="bg-white shadow-md  w-full z-10">
-      <div className="container mx-auto flex justify-between items-center p-4">
+    <header className="bg-white shadow-md w-full z-40">
+      <div className="container mx-auto flex justify-between items-center p-5">
         <NavLink to="/" className="flex items-center">
-          <img src={logo} alt="logo" className="h-12" />
+          <img src={logo} alt="logo" className="h-14" />
         </NavLink>
 
         <button
@@ -25,44 +31,64 @@ const Header = () => {
           </svg>
         </button>
 
-        <div className={`fixed inset-x-0 top-16 bg-white shadow-md md:relative md:top-0 md:bg-transparent md:shadow-none md:flex md:items-center md:space-x-6 ${isMenuOpen ? 'block' : 'hidden'}`}>
-          <nav className="flex flex-col md:flex-row md:space-x-6 text-lg">
+        <div className={`fixed inset-x-0 top-16 bg-white shadow-md md:relative md:top-0 md:bg-transparent md:shadow-none md:flex md:items-center md:space-x-8 ${isMenuOpen ? 'block' : 'hidden'}`}>
+          <nav className="flex flex-col md:flex-row md:space-x-6 text-2xl font-semibold">
             <NavLink
               to="/"
-              activeClassName="text-green-400"
-              className="text-primary hover:text-green-400 transition-colors duration-300 p-4 md:p-0"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-green-400 transition-colors duration-300 p-4 md:p-0"
+                  : "text-black hover:text-green-400 transition-colors duration-300 p-4 md:p-0"
+              }
               exact
             >
               Home
             </NavLink>
             <NavLink
               to="/about"
-              activeClassName="text-green-400"
-              className="text-primary hover:text-green-400 transition-colors duration-300 p-4 md:p-0"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-green-400 transition-colors duration-300 p-4 md:p-0"
+                  : "text-black hover:text-green-400 transition-colors duration-300 p-4 md:p-0"
+              }
               exact
             >
               About
             </NavLink>
             <NavLink
               to="/products"
-              activeClassName="text-green-400"
-              className="text-primary hover:text-green-400 transition-colors duration-300 p-4 md:p-0"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-green-400 transition-colors duration-300 p-4 md:p-0"
+                  : "text-black hover:text-green-400 transition-colors duration-300 p-4 md:p-0"
+              }
               exact
             >
               Products
             </NavLink>
             <NavLink
               to="/clients"
-              activeClassName="text-green-400"
-              className="text-primary hover:text-green-400 transition-colors duration-300 p-4 md:p-0"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-green-400 transition-colors duration-300 p-4 md:p-0"
+                  : "text-black hover:text-green-400 transition-colors duration-300 p-4 md:p-0"
+              }
               exact
             >
               Clients
             </NavLink>
             <NavLink
               to="/contact"
-              activeClassName="text-green-400"
-              className="text-primary hover:text-green-400 transition-colors duration-300 p-4 md:p-0"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-green-400 transition-colors duration-300 p-4 md:p-0"
+                  : "text-black hover:text-green-400 transition-colors duration-300 p-4 md:p-0"
+              }
               exact
             >
               Contact
@@ -71,7 +97,8 @@ const Header = () => {
 
           <NavLink
             to="/contact"
-            className="bg-orange-500 text-white px-4 py-2 font-semibold rounded hover:bg-orange-600 transition-colors duration-300 mt-4 mx-4 md:mt-0 md:mx-0 md:hidden"
+            onClick={closeMenu}
+            className="bg-orange-500 text-white text-2xl px-4 py-2 font-semibold rounded hover:bg-orange-600 transition-colors duration-300 mt- mx-4 md:mt-0 md:mx-0 md:hidden"
             exact
           >
             Contact Us
@@ -80,7 +107,7 @@ const Header = () => {
 
         <NavLink
           to="/contact"
-          className="hidden md:block bg-orange-500 text-white px-4 py-2 font-semibold rounded hover:bg-orange-600 transition-colors duration-300"
+          className="hidden md:block bg-orange-500 text-2xl text-white px-8 py-3 font-semibold rounded hover:bg-orange-600 transition-colors duration-300"
           exact
         >
           Contact Us

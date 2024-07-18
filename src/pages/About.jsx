@@ -1,5 +1,5 @@
 import React from "react";
-import Head from "../assets/images/Head.svg";
+import Head from "../assets/images/about_bg.svg";
 import item1 from "../assets/images/item1.svg";
 import item2 from "../assets/images/item2.svg";
 import item3 from "../assets/images/item3.svg";
@@ -13,15 +13,13 @@ import elipse3 from "../assets/images/elipse3.svg";
 
 const About = () => {
   return (
-    <div className="">
+    <div className="z-0 overflow-x-hidden">
       {/* Mobile View */}
       <div
-        className="bg-cover  bg-no-repeat flex items-center justify-center h-80 laptop:h-96"
-        style={{ backgroundImage: `url(${Head})` }}
+        className="w-full bg-black bg-opacity-50 justify-center bg-cover mobile:bg-center mobile:bg-cover  bg-center bg-no-repeat flex flex-col items-center"
+        style={{ backgroundImage: `url(${Head})`, height: '50vh' }}
       >
-        <h1 className="text-white text-center font-bold text-4xl laptop:text-6xl py-16 laptop:py-24">
-          About Us
-        </h1>
+        <h1 className="text-white text-center flex items-center justify-center font-bold text-6xl">About Us</h1>
       </div>
 
       {/* Tablet and Above View */}

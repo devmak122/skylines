@@ -12,10 +12,10 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
-      <footer className="relative bg-footer-bg bg-cover">
+      <footer className="relative bg-footer-bg laptop:mt-10 bg-cover">
         <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
         <div className="flex flex-wrap justify-around items-center h-auto p-10 relative z-10 lg:h-96 lg:flex-row lg:justify-around">
-          <div className="logo mb-4 md:mb-0 md:w-auto w-full md:flex md:justify-start max-md:flex max-md:text-center">
+          <div className="logo mb-4 mobile:bg-cover mobile:bg-center  md:mb-0 md:w-auto w-full md:flex md:justify-start max-md:flex max-md:text-center">
             <img
               className="w-40 md:w-60 mx-auto md:mx-0"
               src={logo}
@@ -78,23 +78,27 @@ const Footer = () => {
               <h3 className="text-center w-full lg:w-auto">Clients</h3>
               <h3 className="text-center w-full lg:w-auto">Contact Us</h3>
             </div>
-            <div className="link-left flex  items-center mt-4 lg:mt-0 w-full lg:w-auto lg:text-center max-lg:flex max-sm:flex-col ">
-              <h3 className="text-white font-semibold mb-2 pt-1 gap-4 mr-3 text-center">
+            <div className="link-left flex flex-col items-center mt-4 lg:mt-0 w-full lg:w-auto lg:text-center">
+              <h3 className="text-white font-semibold mb-2 pt-1 text-center">
                 Subscribe Us
               </h3>
-              <div className="flex flex-col max-sm:flex-row items-center w-full lg:flex-row lg:w-auto  max-sm:text-center max-sm:items-center max-sm:flex max-sm:justify-center  ">
-                <input
-                  className="bg-green-500 placeholder-white border pl-2 pt-1 pb-1 border-2-white rounded-l-lg placeholder:text-sm mb-2 lg:mb-0 lg:rounded-r-none w-full max-sm:w-auto"
-                  placeholder="Enter Your Email"
-                  type="email"
-                  name=""
-                  id=""
-                />
-                <button className="bg-white text-green-500 pr-4 pl-4 pb-1.5 pt-1.5 rounded-r-lg lg:rounded-l-none w-full max-sm:w-auto  lg:w-auto">
-                  Subscribe
-                </button>
+              <div className="flex flex-col items-center w-full lg:w-auto lg:items-center">
+                <div className="flex w-full  mobile:w-2/3 lg:w-auto">
+                  <input
+                    className="bg-green-500 placeholder-white border pl-2 pt-1 pb-1 border-2-white rounded-l-lg placeholder:text-sm mb-2 lg:mb-0 w-full lg:w-auto"
+                    placeholder="Enter Your Email"
+                    type="email"
+                    name=""
+                    id=""
+                  />
+                  <button className="bg-white mobile:w-2/4 text-green-500 pr-4 pl-4 pb-1.5 pt-1.5 rounded-r-lg w-full lg:w-auto">
+                    Subscribe
+                  </button>
+                </div>
               </div>
             </div>
+
+
           </div>
 
           <div className="icon flex flex-wrap justify-around items-center bg-black p-4">
