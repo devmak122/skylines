@@ -1,6 +1,6 @@
 import React from 'react';
 import ABB from "../assets/images/ABB_logo.svg"
-import Description from "../assets/images/Client_bg.svg"
+import Description from "../assets/images/client_bg.svg"
 import TebianElectricApparatus from "../assets/images/TebianElectricApparatus.svg"
 import img3 from "../assets/images/img3.svg";
 import company4img from "../assets/images/company4img.svg";

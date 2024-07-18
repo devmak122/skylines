@@ -1,11 +1,11 @@
 import React from 'react';
-import backgroundImage from "../assets/images/Rectangle.svg";
+import backgroundImage from "../assets/images/contect_bg.svg";
 
 const ContactUs = () => {
   return (
     <div>
       <div
-        className="w-full bg-black bg-opacity-50 justify-center bg-cover bg-no-repeat flex flex-col items-center"
+        className="w-full bg-black bg-opacity-50 mobile:mt-10 justify-center bg-cover bg-no-repeat flex flex-col items-center"
         style={{ backgroundImage: `url(${backgroundImage})`, height: '50vh' }}
       >
         <h1 className="text-white text-center flex items-center justify-center font-bold text-6xl">CONTACT US</h1>

@@ -14,58 +14,86 @@ const Footer = () => {
     <div>
       <footer className="relative bg-footer-bg bg-cover">
         <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
-        <div className="flex flex-wrap justify-around items-center h-96 p-10 relative z-10">
-          <div className="logo mb-4 lg:mb-0">
-            <img className="w-40" src={logo} alt="Logo" />
+        <div className="flex flex-wrap justify-around items-center h-auto p-10 relative z-10 lg:h-96 lg:flex-row lg:justify-around">
+          <div className="logo mb-4 md:mb-0 md:w-auto w-full md:flex md:justify-start max-md:flex max-md:text-center">
+            <img
+              className="w-40 md:w-60 mx-auto md:mx-0"
+              src={logo}
+              alt="Logo"
+            />
           </div>
-          <div className="links z-10 mb-4 lg:mb-0">
-            <h2 className="text-xl font-bold text-green-400 mb-4">Quick Links</h2>
-            <div className="menu text-md font-medium text-white">
-              <h6><a href="/about-us">About Us</a></h6>
-              <h6><a href="/clients">Clients</a></h6>
-              <h6><a href="/products">Products</a></h6>
-            </div>
-          </div>
-          <div className="contact-us lg:ml-10">
-            <h6 className="text-xl font-bold text-green-400 mb-4 pt-4">Contact Us</h6>
-            <div className="text-md font-medium text-white">
-              <div className="icon flex items-center gap-1 pb-1 cursor-pointer">
-                <img src={email} alt="email" />
-                :<h4 className="underline"><a href="mailto:info@skylinee.in">info@skylinee.in</a></h4>
-              </div>
-              <div className="flex items-center gap-1 pb-1">
-                <img src={phone} alt="phone" />
-                :<h4 className="underline"><a href="tel:+919100412727">+91 910041272727</a></h4>
-              </div>
-              <div className="flex gap-1 items-start">
-                <img src={location} alt="location" />
-                <p>
-                  : F15, Rama Emperro, 2nd Floor, Behind Shell <br /> Petrol Pump, Vadodara, Gujarat.
-                </p>
-              </div>
-            </div>
-          </div>
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-10 items-center">
+  <div className="links z-10 mb-4 md:mb-0 w-full md:w-auto md:flex md:flex-col md:items-start">
+    <h2 className="text-xl font-bold text-green-400 mb-4 text-center md:text-left whitespace-nowrap">
+      Quick Links
+    </h2>
+    <div className="menu text-md font-medium text-white text-center md:text-left">
+      <h6>
+        <a href="/about-us">About Us</a>
+      </h6>
+      <h6>
+        <a href="/clients">Clients</a>
+      </h6>
+      <h6>
+        <a href="/products">Products</a>
+      </h6>
+    </div>
+  </div>
+
+  <div className="contact-us lg:ml-10 lg:w-auto lg:flex lg:flex-col max-md:flex max-md:justify-center max-md:items-center lg:items-start w-full">
+    <h6 className="text-xl font-bold text-green-400 mb-4 pt-4 text-center lg:text-left">
+      Contact Us
+    </h6>
+    <div className="text-md font-medium text-white text-center lg:text-left">
+      <div className="icon flex items-center gap-1 pb-1 cursor-pointer justify-center lg:justify-start">
+        <img src={email} alt="email" />:
+        <h4 className="underline">
+          <a href="mailto:info@skylinee.in">info@skylinee.in</a>
+        </h4>
+      </div>
+      <div className="flex items-center gap-1 pb-1 justify-center lg:justify-start">
+        <img src={phone} alt="phone" />:
+        <h4 className="underline">
+          <a href="tel:+919100412727">+91 910041272727</a>
+        </h4>
+      </div>
+      <div className="flex gap-1 items-start justify-center lg:justify-start">
+        <img src={location} alt="location" />
+        <p className="text-center lg:text-left">
+          : F15, Rama Emperro, 2nd Floor, Behind Shell <br /> Petrol Pump, Vadodara, Gujarat.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
 
-        <div className="relative z-10">
-          <div className="menu flex flex-row flex-wrap justify-around bg-green-500 pt-6 pb-6">
-            <div className="links flex flex-wrap gap-6 font-semibold text-white pt-1">
-              <h3><Link to="/">Home</Link></h3>
-              <h3><Link to="/About">About Us</Link></h3>
-              <h3><Link to="/products">Products</Link></h3>
-              <h3><Link to="/clients">Clients</Link></h3>
-              <h3><Link to="/contact">Contact Us</Link></h3>
+        <div className="relative z-10 ">
+          <div className="menu flex flex-wrap justify-around bg-green-500 pt-6 pb-6">
+            <div className="links flex flex-col gap-6 font-semibold text-white pt-1 items-center w-full lg:w-auto lg:flex-row lg:justify-around">
+              <h3 className="text-center w-full lg:w-auto">Home</h3>
+              <h3 className="text-center w-full lg:w-auto">About Us</h3>
+              <h3 className="text-center w-full lg:w-auto">Products</h3>
+              <h3 className="text-center w-full lg:w-auto">Clients</h3>
+              <h3 className="text-center w-full lg:w-auto">Contact Us</h3>
             </div>
-            <div className="link-left flex flex-wrap items-center mt-4 lg:mt-0">
-              <h3 className="text-white font-semibold mr-4 pt-1">Subscribe Us</h3>
-              <input
-                className="bg-green-500 placeholder-white border pl-2 pt-1 pb-1 border-2-white rounded-l-lg placeholder:text-sm"
-                placeholder="Enter Your Email"
-                type="email"
-                name=""
-                id=""
-              />
-              <button className="bg-white text-green-500 pr-4 pl-4 pb-1.5 pt-1.5 rounded-r-lg">Subscribe</button>
+            <div className="link-left flex  items-center mt-4 lg:mt-0 w-full lg:w-auto lg:text-center max-lg:flex max-sm:flex-col ">
+              <h3 className="text-white font-semibold mb-2 pt-1 gap-4 mr-3 text-center">
+                Subscribe Us
+              </h3>
+              <div className="flex flex-col max-sm:flex-row items-center w-full lg:flex-row lg:w-auto  max-sm:text-center max-sm:items-center max-sm:flex max-sm:justify-center  ">
+                <input
+                  className="bg-green-500 placeholder-white border pl-2 pt-1 pb-1 border-2-white rounded-l-lg placeholder:text-sm mb-2 lg:mb-0 lg:rounded-r-none w-full max-sm:w-auto"
+                  placeholder="Enter Your Email"
+                  type="email"
+                  name=""
+                  id=""
+                />
+                <button className="bg-white text-green-500 pr-4 pl-4 pb-1.5 pt-1.5 rounded-r-lg lg:rounded-l-none w-full max-sm:w-auto  lg:w-auto">
+                  Subscribe
+                </button>
+              </div>
             </div>
           </div>
 
@@ -74,18 +102,34 @@ const Footer = () => {
               <p>Copyright © Skyline Enterprises Pvt Ltd</p>
             </div>
             <div className="icons flex gap-2 text-white">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <Link
+                to="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={Twitter} alt="Twitter" />
-              </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              </Link>
+              <Link
+                to="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={instagram} alt="instagram" />
-              </a>
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              </Link>
+              <Link
+                to="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={facebook} alt="facebook" />
-              </a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              </Link>
+              <Link
+                to="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={Linkedin} alt="Linkedin" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -10,13 +10,13 @@
         screens: {
           laptop: { min: "1026px", max: "1920px" },
           tablet: { min: "800px", max: "1025px" },
-          galDev: { min: "800px", max: "962px" },
-          mobile: { min: "300px", max: "800px" },
+          mobile: { min: "300px", max: "962px" },
           customMobile: { min: "600px", max: "800px" },
           newMobile: { min: "300px", max: "600px" },
 
           verifyCustom: { min: "1023px", max: "1300px" },
-          verifyCustomMob: { min: "300px", max: "400px" },
+          verifyCustomMob: { min:
+       "300px", max: "400px" },
           scrollTablet: { min: "600px", max: "800px" },
 
           headerDev: { min: "1501px", max: "1655px" },

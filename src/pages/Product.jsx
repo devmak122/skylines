@@ -1,5 +1,5 @@
 import React from 'react'
-import product_bg from "../assets/images/product_bg.svg"
+import product_bg from "../assets/images/product_bg.jpg"
 import pro4 from "../assets/images/pro4.jpg"
 import product4 from "../assets/images/product2.jpg"
 import product1 from "../assets/images/product1.jpg"
@@ -11,11 +11,13 @@ import pro6 from "../assets/images/pro6.jpg"
 const Product = () => {
   return (
     <div>
-          <div class="relative">
-        <img src={product_bg} class="w-[1920px] h-[600px] " alt="product_bg"/>
-        <div class="absolute inset-0 flex items-center justify-center text-white text-[96px] font-bold">
-            Products
-        </div>
+          <div
+        className="bg-cover  bg-center  bg-no-repeat flex items-center justify-center h-80 laptop:h-96"
+        style={{ backgroundImage: `url(${product_bg})` }}
+      >
+        <h1 className="text-white text-center font-bold text-4xl laptop:text-6xl py-16 laptop:py-24">
+          Product
+        </h1>
       </div>
       <div class=" grid grid-cols-3 gap-6 md:grid-cols-2 lg:grid-cols-2 mx-4 my-4 ml-11">
 

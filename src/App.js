@@ -16,7 +16,9 @@ function App() {
         <Route path="/" element={
           <>
             <Header />
+            <div className=''>
             <Home />
+            </div>
             <Footer />
           </>
         } />
