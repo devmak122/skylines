@@ -1,5 +1,5 @@
 import React from "react";
-import Head from "../assets/images/about_bg.svg";
+import About_phone_bg from "../assets/images/About_phone_bg.svg";
 import item1 from "../assets/images/item1.svg";
 import item2 from "../assets/images/item2.svg";
 import item3 from "../assets/images/item3.svg";
@@ -17,7 +17,7 @@ const About = () => {
       {/* Mobile View */}
       <div
         className="w-full bg-black bg-opacity-50 justify-center bg-cover mobile:bg-center mobile:bg-cover  bg-center bg-no-repeat flex flex-col items-center"
-        style={{ backgroundImage: `url(${Head})`, height: '50vh' }}
+        style={{ backgroundImage: `url(${About_phone_bg})`, height: '50vh' }}
       >
         <h1 className="text-white text-center flex items-center justify-center font-bold text-6xl">About Us</h1>
       </div>

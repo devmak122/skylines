@@ -8,6 +8,7 @@ import Rectangle from "../assets/images/Rectangle.svg";
 import trans1 from "../assets/images/trans1.jpeg";
 import trans2 from "../assets/images/Trans2.jpeg";
 import trans3 from "../assets/images/Trans3.jpeg";
+import { Link } from 'react-router-dom';
 
 const Home = () => (
   <div className="overflow-x-hidden">
@@ -15,7 +16,7 @@ const Home = () => (
     <div className="z-0">
       <div
         className="w-full bg-black bg-opacity-50 flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${Rectangle})`, height: '65vh' }}
+        style={{ backgroundImage: `url(${Rectangle})`, height: '' }}
       >
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between h-full px-4 py-8">
           <div className="text-white max-w-lg md:mb-0 text-center md:text-left">
@@ -25,9 +26,9 @@ const Home = () => (
             <h2 className="text-xl md:text-2xl font-semibold mb-6">
               Skyline Enterprises is a transformer manufacturer and supplier in India.
             </h2>
-            <button className="bg-orange-500 text-white px-6 py-3 rounded hover:bg-orange-600 transition-colors duration-300">
+           <Link to="/products"> <button className="bg-orange-500 text-white px-6 py-3 rounded hover:bg-orange-600 transition-colors duration-300">
               View Products
-            </button>
+            </button></Link>
           </div>
           <div className="hidden md:block bg-green-700 bg-opacity-80 p-8 rounded-lg text-white max-w-md w-full">
             <h3 className="text-2xl font-semibold mb-4 text-center">Connect With Us</h3>
@@ -86,31 +87,35 @@ const Home = () => (
             <span className="text-green-600">Skyline Enterprises</span>, a prominent name in <span className="text-blue-600">India's transformer industry</span>, was established in <span className="text-red-600">2010</span> and is headquartered in <span className="text-purple-600">Koparkhairane, Navi Mumbai</span>. With over a decade of expertise, the company offers a wide range of specialized services, including <span className="text-green-600">labour supply</span> for transformer-related activities like <span className="text-blue-600">winding, core assembly, and tanking</span>. Skyline's experienced team also excels in <span className="text-red-600">on-site servicing and maintenance</span> of transformers, ensuring they meet the highest standards of quality and reliability. Committed to delivering comprehensive support, Skyline Enterprises has earned a reputation for <span className="text-purple-600">excellence and trustworthiness</span>, making it a preferred choice for clients seeking top-notch transformer solutions.
           </p>
         </div>
-        <div className="flex justify-center items-center lg:w-1/2 lg:justify-start">
-          <div className="relative w-48 h-48 tablet:w-64 tablet:h-64 lg:w-[500px] lg:h-[500px] mb-8 lg:mb-0">
-            <div className="relative -top-10 inset-0 rounded-full border-4 border-primary flex items-center justify-center h-[300px] w-[300px] tablet:h-[400px] tablet:w-[400px] lg:h-[500px] lg:w-[500px]">
-              <div className="relative w-20 h-20 tablet:w-28 tablet:h-28 lg:w-80 lg:h-80 mr-20 tablet:mr-40 lg:mr-80">
-                <img
-                  src={trans1}
-                  alt="Transformer 1"
-                  className="rounded-full border-4 border-primary h-full w-full"
-                />
-              </div>
-              <div className="absolute w-20 h-20 tablet:w-28 tablet:h-28 lg:w-64 lg:h-64 transform translate-x-14 tablet:translate-x-28 lg:translate-x-48 flex-col mb-36 tablet:mb-48 lg:mb-72 mr-14 tablet:mr-28 lg:mr-28">
-                <img
-                  src={trans3}
-                  alt="Transformer 3"
-                  className="rounded-full border-4 border-primary h-full w-full mb-4 tablet:mb-8 lg:mb-0"
-                />
-                <img
-                  src={trans2}
-                  alt="Transformer 2"
-                  className="rounded-full border-4 border-primary h-full w-full"
-                />
+        <div className="flex justify-center items-center lg:w-1/2  lg:justify-start">
+            <div className="  relative w-64 h-64 lg:w-[500px] lg:h-[500px]   mb-8 lg:mb-0">
+              <div
+                className="relative 
+               -top-14  inset-0 rounded-full laptop:ml-56 border-4 border-primary border-opacity-15 flex items-center justify-center h-[700px] w-[700px]"
+              >
+                <div className="relative w-28 h-28 lg:w-80 lg:h-80 mr-80 ">
+                  <img
+                    src={trans1}
+                    alt="Transformer 1"
+                    className="rounded-full border-4 border-primary h-full w-full"
+                  />
+                </div>
+                <div className="absolute w-28 h-28 lg:w-64 lg:h-64 transform translate-x-28 lg:translate-x-48 flex-col mb-72 mr-28">
+                  <img
+                    src={trans3}
+                    alt="Transformer 3"
+                    className="rounded-full border-4 border-primary h-full w-full "
+                  />
+                  <br />
+                  <img
+                    src={trans2}
+                    alt="Transformer 2"
+                    className="rounded-full border-4 border-primary h-full w-full"
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
 
       {/* Section Title */}
@@ -185,9 +190,9 @@ const Home = () => (
         </p>
       </div>
       <div className="text-green-600 text-lg tablet:text-xl laptop:text-2xl font-medium flex mobile:mb-10 justify-center mt-4">
-        <button className="border border-green-600 rounded-lg w-48 h-12 tablet:w-64 tablet:h-14 laptop:w-80 laptop:h-16 hover:bg-green-600 hover:text-white transition-colors duration-300">
+        <Link to="/About"><button className="border border-green-600 rounded-lg w-48 h-12 tablet:w-64 tablet:h-14 laptop:w-80 laptop:h-16 hover:bg-green-600 hover:text-white transition-colors duration-300">
           LEARN MORE
-        </button>
+        </button></Link>
       </div>
     </div>
   </div>

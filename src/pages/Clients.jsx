@@ -17,7 +17,7 @@ import img14 from "../assets/images/img14.svg";
 import img15 from "../assets/images/img15.svg";
 
 const Clients = () => (
-    <div className="overflow-x-hidden">
+    <div className="">
         <div
             className="w-full bg-black bg-opacity-50 justify-center bg-center  bg-cover bg-no-repeat flex flex-col items-center"
             style={{ backgroundImage: `url(${Description})`, height: '50vh' }}
@@ -27,13 +27,13 @@ const Clients = () => (
         <div className="container mx-auto py-8 ">
             <h1 className="text-center text-[48px] font-bold mb-8 text-primary pb-12">Our Client's</h1>
 
-            <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-6 mx-4 my-4 ml-11">
+            <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-6 mx-4 my-4 ml-11 mobile:ml-[-5px]">
                 <div className="relative group">
                     <div className="absolute flex flex-col items-center justify-center p-4 bg-white shadow-md w-[296px] h-[215px] rounded-lg border-[3px] border-customGreen mx-2 my-2 leading-10">
                         <img src={ABB} alt="ABB" className="h-20" />
                         <p className="text-[30px] text-center text-customGreen font-bold pt-3">ABB Ltd<br />Group</p>
                     </div>
-                    <div className="bg-green-500 h-[72px] w-[72px] mt-44 ml-[-10px]"></div>
+                    <div className="bg-green-500 h-[72px] w-[72px] mt-44  mobile: ml-[-10px] mobile:mt-[175px]"></div>
                 </div>
                 <div className="flex flex-col items-center justify-center p-4 bg-white shadow-md w-[296px] h-[215px] rounded-lg border-[3px] border-customGreen mx-2 my-2 leading-10">
                     <img src={TebianElectricApparatus} alt="TebianElectricApparatus" className="h-20" />
@@ -48,9 +48,9 @@ const Clients = () => (
                         <img src={company4img} alt="company4img" className="h-20" />
                         <p className="text-[30px] text-center text-customGreen font-bold pt-3">Raychem RPG (p)<br />Ltd.</p>
                     </div>
-                    <div className="bg-green-100 h-[72px] w-[72px] mt-[-85px] ml-[170px]"></div>
+                    <div className="bg-green-100 h-[72px] w-[72px] mt-[-85px] ml-[170px] mobile:mt-[-10px] mobile:ml-[255px]"></div>
                 </div>
-                <div className="flex flex-col items-center justify-center p-4 bg-white shadow-md w-[296px] h-[215px] rounded-lg border-[3px] border-customGreen mx-2 my-2 leading-10">
+                <div className="flex flex-col items-center justify-center p-4 bg-white shadow-md w-[296px] h-[215px] rounded-lg border-[3px] border-customGreen mx-2 my-2 leading-10 mobile:mt-[185px]">
                     <img src={img5} alt="img5" className="h-20" />
                     <p className="text-[30px] text-center text-customGreen font-bold pt-3">ATLANTA<br />ELECTRICALS</p>
                 </div>
@@ -63,16 +63,16 @@ const Clients = () => (
                         <img src={img7} alt="img7" className="h-20" />
                         <p className="text-[30px] text-center text-customGreen font-bold pt-3">TMC Transformers<br />Spa</p>
                     </div>
-                    <div className="bg-green-100 h-[80px] w-[80px] mt-[-25px] ml-[299px]"></div>
+                    <div className="bg-green-100 h-[80px] w-[80px] mt-[-25px] ml-[299px] mobile:ml-[-22px] mobile:mt-[-10px]"></div>
                 </div>
                 <div className="relative group">
-                    <div className="absolute flex flex-col items-center justify-center p-4 bg-white shadow-md w-[296px] h-[215px] rounded-lg border-[3px] border-customGreen mx-2 my-2 leading-10">
+                    <div className="absolute flex flex-col items-center justify-center p-4 bg-white shadow-md w-[296px] h-[215px] rounded-lg border-[3px] border-customGreen mx-2 my-2 leading-10 mobile:mt-[185px]">
                         <img src={img8} alt="img8" className="h-20" />
                         <p className="text-[30px] text-center text-customGreen font-bold pt-3">Schneider<br />Electric</p>
                     </div>
-                    <div className="border-t-[12px] border-r-[12px] border-customGreen h-[72px] w-[72px] mt-[-15px] ml-[256px]"></div>
+                    <div className="border-t-[12px] border-r-[12px] border-customGreen h-[72px] w-[72px] mt-[-15px] ml-[256px] mobile:mt-[165px] mobile:ml-[252px]"></div>
                 </div>
-                <div className="flex flex-col items-center justify-center p-4 bg-white shadow-md w-[296px] h-[215px] rounded-lg border-[3px] border-customGreen mx-2 my-2 leading-10">
+                <div className="flex flex-col items-center justify-center p-4 bg-white shadow-md w-[296px] h-[215px] rounded-lg border-[3px] border-customGreen mx-2 my-2 leading-10 mobile:mt-[175px]">
                     <img src={img9} alt="img9" className="h-20" />
                     <p className="text-[30px] text-center text-customGreen font-bold pt-3">CG Power and<br />Industrial Solutions</p>
                 </div>
