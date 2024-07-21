@@ -31,8 +31,8 @@ const Header = () => {
           </svg>
         </button>
 
-        <div className={`fixed inset-x-0 top-16 bg-white shadow-md md:relative md:top-0 md:bg-transparent md:shadow-none md:flex md:items-center md:space-x-8 ${isMenuOpen ? 'block' : 'hidden'}`}>
-          <nav className="flex flex-col md:flex-row md:space-x-6 text-2xl font-semibold">
+        <div className={`fixed inset-x-0 top-20 bg-white shadow-md md:relative md:top-0 md:bg-transparent md:shadow-none md:flex md:items-center md:space-x-8 ${isMenuOpen ? 'block' : 'hidden'}`}>
+          <nav className="flex flex-col md:flex-row md:space-x-6 text-2xl mobile:text-center font-semibold">
             <NavLink
               to="/"
               onClick={closeMenu}
@@ -94,15 +94,16 @@ const Header = () => {
               Contact
             </NavLink>
           </nav>
-
-          <NavLink
-            to="/contact"
-            onClick={closeMenu}
-            className="bg-orange-500 text-white text-2xl px-4 py-2 font-semibold rounded hover:bg-orange-600 transition-colors duration-300 mt- mx-4 md:mt-0 md:mx-0 md:hidden"
-            exact
-          >
-            Contact Us
-          </NavLink>
+          <div className="flex justify-center mt-4 md:hidden">
+            <NavLink
+              to="/contact"
+              onClick={closeMenu}
+              className="bg-orange-500 text-white text-2xl px-4 py-2 font-semibold rounded hover:bg-orange-600 transition-colors duration-300"
+              exact
+            >
+              Contact Us
+            </NavLink>
+          </div>
         </div>
 
         <NavLink

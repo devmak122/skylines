@@ -72,11 +72,23 @@ const Footer = () => {
         <div className="relative z-10 ">
           <div className="menu flex flex-wrap justify-around bg-green-500 pt-6 pb-6">
             <div className="links flex flex-col gap-6 font-semibold text-white pt-1 items-center w-full lg:w-auto lg:flex-row lg:justify-around">
-              <h3 className="text-center w-full lg:w-auto">Home</h3>
-              <h3 className="text-center w-full lg:w-auto">About Us</h3>
-              <h3 className="text-center w-full lg:w-auto">Products</h3>
-              <h3 className="text-center w-full lg:w-auto">Clients</h3>
-              <h3 className="text-center w-full lg:w-auto">Contact Us</h3>
+            
+              <h3 className="text-center w-full lg:w-auto">
+                <Link to="/">Home</Link>
+              </h3>
+              <h3 className="text-center w-full lg:w-auto">
+                <Link to="/about">About Us</Link>
+              </h3>
+              <h3 className="text-center w-full lg:w-auto">
+                <Link to="/products">Products</Link>
+              </h3>
+              <h3 className="text-center w-full lg:w-auto">
+                <Link to="/clients">Clients</Link>
+              </h3>
+              <h3 className="text-center w-full lg:w-auto">
+                <Link to="/contact">Contact Us</Link>
+              </h3>
+
             </div>
             <div className="link-left flex flex-col items-center mt-4 lg:mt-0 w-full lg:w-auto lg:text-center">
               <h3 className="text-white font-semibold mb-2 pt-1 text-center">
