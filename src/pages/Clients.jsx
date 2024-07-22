@@ -15,7 +15,7 @@ import img12 from "../assets/images/img12.svg";
 import img13 from "../assets/images/img13.svg";
 import img14 from "../assets/images/img14.svg";
 import img15 from "../assets/images/img15.svg";
-import Typewriter from 'react-typewriter-effect';
+
 
 
 const Clients = () => (
@@ -25,12 +25,7 @@ const Clients = () => (
             style={{ backgroundImage: `url(${Description})`, height: '50vh' }}
         >
             <h1 className="text-white text-center flex items-center justify-center font-bold text-6xl">
-                <Typewriter
-                    text="Client"
-                    typeSpeed={100}
-                    startDelay={500}
-                    cursorColor="white"
-                /></h1>
+            Client</h1>
         </div>
         <div className="container mx-auto py-8 ">
             <h1 className="text-center text-[48px] font-bold mb-8 text-primary pb-12">Our Client's</h1>

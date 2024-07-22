@@ -7,7 +7,7 @@ import product1 from "../assets/images/product1.jpg";
 import pro3 from "../assets/images/pro3.jpg";
 import pro5 from "../assets/images/pro5.jpg";
 import pro6 from "../assets/images/pro6.jpg";
-import Typewriter from 'react-typewriter-effect';
+
 
 
 const products = [
@@ -52,12 +52,7 @@ const Product = () => {
       >
         <div
           className="text-white text-center flex items-center justify-center font-bold text-6xl">
-          <Typewriter
-            text=" Products"
-            typeSpeed={100}
-            startDelay={500}
-            cursorColor="white"
-          />
+         Products
         </div>
       </div>
       <div className="grid mobile:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-6 mx-4 my-4 p-6">

@@ -12,9 +12,10 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
-      <footer className="relative bg-footer-bg laptop:mt-10 bg-cover">
+      <footer className="relative bg-footer-bg laptop:mt-10 bg-cover font-roboto">
         <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
         <div className="flex flex-wrap justify-around items-center h-auto p-10 relative z-10 lg:h-96 lg:flex-row lg:justify-around">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center laptop:gap-52 mobil:gap-10 items-center">
           <div className="logo mb-4 mobile:bg-cover mobile:bg-center  md:mb-0 md:w-auto w-full md:flex md:justify-start max-md:flex max-md:text-center">
             <img
               className="w-40 md:w-60 mx-auto md:mx-0"
@@ -22,7 +23,6 @@ const Footer = () => {
               alt="Logo"
             />
           </div>
-          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-10 items-center">
   <div className="links z-10 mb-4 md:mb-0 w-full md:w-auto md:flex md:flex-col md:items-start">
     <h2 className="text-xl font-bold text-green-400 mb-4 text-center md:text-left whitespace-nowrap">
       Quick Links
@@ -47,13 +47,13 @@ const Footer = () => {
     <div className="text-md font-medium text-white text-center lg:text-left">
       <div className="icon flex items-center gap-1 pb-1 cursor-pointer justify-center lg:justify-start">
         <img src={email} alt="email" />:
-        <h4 className="underline">
+        <h4 className="">
           <a href="mailto:info@skylinee.in">info@skylinee.in</a>
         </h4>
       </div>
       <div className="flex items-center gap-1 pb-1 justify-center lg:justify-start">
         <img src={phone} alt="phone" />:
-        <h4 className="underline">
+        <h4 className="">
           <a href="tel:+919100412727">+91 910041272727</a>
         </h4>
       </div>
@@ -70,49 +70,7 @@ const Footer = () => {
         </div>
 
         <div className="relative z-10 ">
-          <div className="menu flex flex-wrap justify-around bg-green-500 pt-6 pb-6">
-            <div className="links flex flex-col gap-6 font-semibold text-white pt-1 items-center w-full lg:w-auto lg:flex-row lg:justify-around">
-            
-              <h3 className="text-center w-full lg:w-auto">
-                <Link to="/">Home</Link>
-              </h3>
-              <h3 className="text-center w-full lg:w-auto">
-                <Link to="/about">About Us</Link>
-              </h3>
-              <h3 className="text-center w-full lg:w-auto">
-                <Link to="/products">Products</Link>
-              </h3>
-              <h3 className="text-center w-full lg:w-auto">
-                <Link to="/clients">Clients</Link>
-              </h3>
-              <h3 className="text-center w-full lg:w-auto">
-                <Link to="/contact">Contact Us</Link>
-              </h3>
-
-            </div>
-            <div className="link-left flex flex-col items-center mt-4 lg:mt-0 w-full lg:w-auto lg:text-center">
-              <h3 className="text-white font-semibold mb-2 pt-1 text-center">
-                Subscribe Us
-              </h3>
-              <div className="flex flex-col items-center w-full lg:w-auto lg:items-center">
-                <div className="flex w-full  mobile:w-2/3 lg:w-auto">
-                  <input
-                    className="bg-green-500 placeholder-white border pl-2 pt-1 pb-1 border-2-white rounded-l-lg placeholder:text-sm mb-2 lg:mb-0 w-full lg:w-auto"
-                    placeholder="Enter Your Email"
-                    type="email"
-                    name=""
-                    id=""
-                  />
-                  <button className="bg-white mobile:w-2/4 text-green-500 pr-4 pl-4 pb-1.5 pt-1.5 rounded-r-lg w-full lg:w-auto">
-                    Subscribe
-                  </button>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-
+         
           <div className="icon flex flex-wrap justify-around items-center bg-black p-4">
             <div className="logo-p text-xs text-gray-400 mb-4 lg:mb-0">
               <p>Copyright © Skyline Enterprises Pvt Ltd</p>

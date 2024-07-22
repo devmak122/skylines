@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import con_bg from "../assets/images/con_bg.png";
-import Typewriter from 'react-typewriter-effect';
+
 import { useForm } from 'react-hook-form';
 import useWeb3Forms from '@web3forms/react';
 
@@ -46,12 +46,7 @@ const ContactUs = () => {
         transition={{ duration: 1 }}
       >
         <h1 className="text-white text-center flex items-center justify-center font-bold text-6xl">
-          <Typewriter
-            text="Contact Us"
-            typeSpeed={100}
-            startDelay={500}
-            cursorColor="white"
-          />
+        Contact Us
         </h1>
       </motion.div>
       <div className="relative font-poppins flex flex-col mobile:mb-10 md:flex-row justify-center items-start mt-10 space-y-10 md:space-y-0 md:space-x-11 px-6 md:px-0">
