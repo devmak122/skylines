@@ -32,7 +32,7 @@ const Header = () => {
         </button>
 
         <div className={`fixed inset-x-0 top-20 bg-white shadow-md md:relative md:top-0 md:bg-transparent md:shadow-none md:flex md:items-center md:space-x-8 ${isMenuOpen ? 'block' : 'hidden'}`}>
-          <nav className="flex flex-col md:flex-row md:space-x-20 text-lg mobile:text-center font-semibold">
+          <nav className="flex flex-col md:flex-row md:space-x-20 text-[17px]  mobile:text-sm mobile:text-center font-semibold">
             <NavLink
               to="/"
               onClick={closeMenu}
@@ -98,7 +98,7 @@ const Header = () => {
             <NavLink
               to="/contact"
               onClick={closeMenu}
-              className="bg-orange-500 text-white text-lg px-4 py-2 font-semibold rounded hover:bg-orange-600 transition-colors duration-300"
+              className="bg-orange-500 text-white text-lg px-4 py-2 font-semibold rounded mobile:text-sm   hover:bg-orange-600 transition-colors duration-300"
               exact
             >
               CONTACT US
@@ -108,7 +108,7 @@ const Header = () => {
 
         <NavLink
           to="/contact"
-          className="hidden md:block bg-orange-500 text-lg text-white px-8 py-3 font-semibold rounded hover:bg-orange-600 transition-colors duration-300"
+          className="hidden md:block bg-orange-500 text-[17px]  mobile:text-sm  text-white px-8 py-3 font-semibold rounded hover:bg-orange-600 transition-colors duration-300"
           exact
         >
 CONTACT US

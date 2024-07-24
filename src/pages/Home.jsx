@@ -42,7 +42,7 @@ const Home = () => {
   });
 
   return (
-    <div className="mobile:overflow-x-hidden">
+    <div className="overflow-x-hidden">
       {/* Hero Section */}
       <div className="z-0">
         <div
@@ -173,12 +173,12 @@ const Home = () => {
 
       <div className="relative z-10 px-4 tablet:px-8 laptop:px-12 font-Montserrat">
         <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between mb-12">
-          <div className="lg:w-[40%] mobile:p-4 ml-6 mt-18 lg:pr-8 px-10 lg:mb-0">
+          <div className="lg:w-[40%] mobile:p-4 laptop:ml-6 mt-18  lg:mb-0">
             <h2 className="text-orange-500 font-roboto text-xl mobile:text-center mobile:text-2xl mobile:mt-10 tablet:text-2xl laptop:text-[46px] laptop:leading-[48px] font-bold mb-4 lg:mt-[150px]">
               Skyline Transforming Your Energy Solutions
             </h2>
 
-            <p className="text-[#656464] mobile:text-center text-base tablet:text-lg  font-poppins laptop:text-[16px]">
+            <p className="text-[#656464] mobile:text-center text-base tablet:text-lg  font-poppins laptop:text-[17px]">
               Skyline Enterprisesstands out as a dynamic and powerful entity,
               boasting a team of highly skilled professionals with extensive
               experience collaborating with major corporations. Our experts are
@@ -191,7 +191,7 @@ const Home = () => {
             </p>
           </div>
           <div className="flex justify-center items-center lg:w-1/2 lg:justify-start">
-            <Zoom delay={700}>
+          
               <div className="relative ml-[-265px] w-64 h-64 lg:w-[500px] lg:h-[500px] mt-[-135px] mb-8 lg:mb-0">
                 <div className="relative inset-0 rounded-full laptop:ml-60 border-4 bg-primary bg-opacity-[5%] border-none flex items-center justify-center h-[850px] w-[850px] mobile:h-[500px] mobile:w-[500px] mobile:ml-[60px] mobile:mt-[150px]">
                   <div className="relative w-28 h-28 lg:w-[450px] lg:h-[450px] mr-[400px]">
@@ -221,7 +221,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            </Zoom>
+            
           </div>
         </div>
         <div className="relative group">
@@ -238,7 +238,7 @@ const Home = () => {
 
         {/* Section Title */}
 
-        <div className="container  -mt-40 mx-auto py-12">
+        <div className="container  laptop:-mt-40 mx-auto  py-12">
           {/* Section Header */}
           <div className="flex flex-col items-center text-center mb-12">
             <p className="text-orange-500 font-bold mobile:text-[30px] tablet:text-[36px] laptop:text-[46px]">
@@ -251,7 +251,7 @@ const Home = () => {
           </div>
 
           {/* Section Content */}
-          <div className="flex flex-row tablet:flex-row mobile:flex-col justify-center gap-8 px-4 laptop:px-20">
+          <div className="flex flex-row tablet:flex-row mobile:flex-col justify-center gap-8 mobile:px-0 laptop:px-20">
             <Zoom>
               <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center justify-center w-full h-[330px] max-w-sm">
                 <img
@@ -259,7 +259,7 @@ const Home = () => {
                   alt="commit"
                   className="w-[100px] h-[100px] object-cover rounded-lg"
                 />
-                <p className="font-semibold text-black  mt-1 text-[20px] mb-4">
+                <p className="font-semibold text-black text-center  mt-1 text-[20px] mb-4">
                   Dedication and Commitment:
                 </p>
                 <p className="text-[#656464] font-light text-[18px] mb-10 text-center">
@@ -306,27 +306,27 @@ const Home = () => {
       </div>
 
       {/* Other Content */}
-      <div className="flex flex-col laptop:flex-row items-center laptop:items-start justify-between mobile:flex-col px-4 tablet:px-8 laptop:px-0">
-  <div className="relative flex-1 flex flex-col mobile:mx-4 laptop:mx-0">
-    <div className="relative w-full h-full laptop:w-3/4 laptop:h-[300px]  laptop:mb-48">
+      <div className="flex flex-col laptop:flex-row items-center  mt-32  mb-5 laptop:items-start justify-between mobile:flex-col px-4 tablet:px-8 laptop:px-0">
+  <div className="relative flex-1 flex flex-col  mobile:mx-8 mobile:mb-10   laptop:mx-0">
+    <div className="relative w-full h-full laptop:w-2/4 laptop:h-[300px] laptop:mb-14">
       {/* Background Elements */}
       {/* First Image */}
-      <img
-        src={client1}
-        alt="client1"
-        className="w-full h-full object-cover rounded-lg ml-20 shadow-lg"
-      />
+            <img
+              src={client2}
+              alt="client2"
+              className="w-full h-full object-cover rounded-lg   laptop:ml-20 mobile:-ml-1  shadow-lg"
+            />
     </div>
-    <div className="relative w-full h-full laptop:w-3/4  laptop:p-4 laptop:-mt-[200px]  laptop:ml-[200px] laptop:h-[300px]">
+          <div className="relative w-full h-full laptop:w-2/4 mobile:-mt-20  mobile:ml-5   laptop:-mt-[200px]  laptop:ml-[300px] laptop:h-[300px]">
       {/* Second Image */}
       <img
         src={client2}
         alt="client2"
-        className="w-full h-full object-cover rounded-lg shadow-lg"
+              className="w-full h-full object-cover rounded-lg   shadow-lg"
       />
     </div>
   </div>
-  <div className="flex-1 flex flex-col items-center font-roboto laptop:items-start laptop:mt-[100px] px-4 tablet:px-8 laptop:px-16">
+  <div className="flex-1 flex flex-col items-center laptop:mt-2 font-roboto laptop:items-start  px-4 tablet:px-8 laptop:px-16">
     <p className="text-orange-500 font-extrabold text-3xl tablet:text-4xl laptop:text-5xl">
       About Us
     </p>
