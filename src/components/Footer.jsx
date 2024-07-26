@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <div>
       <footer className="relative bg-footer-bg laptop:mt-10 bg-cover font-roboto">
-        <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
+        <div className="absolute inset-0 bg-black opacity-85 z-0"></div>
         <div className="flex flex-wrap justify-around items-center h-auto p-10 relative z-10 lg:h-96 lg:flex-row lg:justify-around">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center laptop:gap-52 mobil:gap-10 items-center">
           <div className="logo mb-4 mobile:bg-cover mobile:bg-center  md:mb-0 md:w-auto w-full md:flex md:justify-start max-md:flex max-md:text-center">
@@ -72,7 +72,7 @@ const Footer = () => {
         <div className="relative z-10 ">
          
           <div className="icon flex flex-wrap justify-around items-center bg-black p-4">
-            <div className="logo-p text-xs text-gray-400 mb-4 lg:mb-0">
+            <div className="logo-p text-sm text-white mb-4 lg:mb-0">
               <p>Copyright © Skyline Enterprises Pvt Ltd</p>
             </div>
             <div className="icons flex gap-2 text-white">

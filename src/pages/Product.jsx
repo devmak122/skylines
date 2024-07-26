@@ -51,59 +51,38 @@ const Product = () => {
         style={{ backgroundImage: `url(${pro_bg})`, height: '50vh' }}
       >
         <div
-          className="text-white text-center flex items-center justify-center font-bold text-6xl">
+          className="text-white text-center flex items-center justify-center  font-roboto font-bold text-6xl">
          Products
         </div>
       </div>
       <div className="grid mobile:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-6 mx-4 my-4 p-6">
         {products.map((product, index) => (
-          <motion.div
+          <div
             key={index}
-            className="relative flex flex-col items-center justify-center p-4 bg-white rounded-lg leading-10"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-          >
-            <div className="absolute laptop:top-[-10px] laptop:left-[-20px] mobile:top-[10px] mobile:left-[10px] w-16 h-16 border-t-[8px] border-l-[8px] border-orange-500 mobile:mt-[70px] mobile:ml-[-10px] laptop:mt-[90px] laptop:ml-[20px]"></div>
-            <motion.p
-              className="text-[35px] font-bold text-primary mobile:text-center mt-0 mb-10 z-10"
-              initial={{ opacity: 0, x: -100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
+            className="relative flex flex-col  items-center justify-center p-4 bg-white  leading-10">
+            <div className="absolute laptop:top-[25px] laptop:left-[55px] mobile:top-[10px] mobile:left-[10px] w-16 h-16 border-t-[5px] border-l-[5px] border-orange-500 mobile:mt-[70px] mobile:ml-[-10px] laptop:mt-[90px] laptop:ml-[20px]"></div>
+            <p
+              className="text-[35px] font-semibold font-roboto text-primary mobile:text-center mt-10 mb-10  z-10"
+                         >
               {product.title}
-            </motion.p>
-            <motion.img
+            </p>
+            <img
               src={product.imgSrc}
               alt={product.title}
-              className="w-full h-[300px] object-cover z-10 rounded-lg"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.5 }}
+              className="w-3/5 h-[200px] object-cover bg-cover   z-10 "
+             
             />
-            <div className="absolute laptop:bottom-[-10px] laptop:right-[-20px] mobile:bottom-[10px] mobile:right-[10px] w-16 h-16 border-b-[8px] border-r-[8px] border-orange-500 mobile:mb-[170px] mobile:mr-[-10px] laptop:mb-[150px] laptop:mr-[20px]"></div>
-            <motion.p
-              className="text-[22px] font-semibold text-primary mobile:text-center mt-7 mb-4 z-10"
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 + 0.2 }}
-            >
+            <div className="absolute laptop:bottom-[20px] laptop:right-[56px] mobile:bottom-[10px] mobile:right-[10px] w-16 h-16 border-b-[5px] border-r-[5px] border-orange-500 mobile:mb-[170px] mobile:mr-[-10px] laptop:mb-[150px] laptop:mr-[20px]"></div>
+            <p
+              className="text-[22px] font-semibold font-poppins text-primary mobile:text-center mt-12 mb-9 z-10">
               {product.description}
-            </motion.p>
-            <motion.button
-              className="bg-orange-500 text-white px-4 py-2 rounded-lg border-none"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
-              whileHover={{
-                scale: 1.1,
-                rotate: 1,
-                backgroundColor: '#FF9F59', // Coral color for hover effect
-                transition: { duration: 0.3 }
-              }}
-            >
+            </p>
+            <button
+              className="bg-orange-500 font-poppins
+               text-white px-4 py-2 rounded-lg border-none">
               View Products
-            </motion.button>
-          </motion.div>
+            </button>
+          </div>
         ))}
       </div>
     </div>

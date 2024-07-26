@@ -24,11 +24,11 @@ const Clients = () => (
             className="w-full bg-black bg-opacity-50 justify-center bg-center  bg-cover bg-no-repeat flex flex-col items-center"
             style={{ backgroundImage: `url(${Description})`, height: '50vh' }}
         >
-            <h1 className="text-white text-center flex items-center justify-center font-bold text-6xl">
+            <h1 className="text-white text-center flex items-center justify-center font-roboto font-bold text-6xl">
             Client</h1>
         </div>
         <div className="container mx-auto py-8 ">
-            <h1 className="text-center text-[48px] font-bold mb-8 text-primary pb-12">Our Client's</h1>
+            <h1 className="text-center text-[48px] font-bold mb-8 font-roboto text-primary pb-12">Our Client's</h1>
 
             <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-6 mx-4 my-4 ml-11 mobile:ml-[-5px]">
                 <div className="relative group">

@@ -1,7 +1,7 @@
 import React from "react";
 
 import group from "../assets/images/group.svg";
-import client1 from "../assets/images/client1.png";
+import client3 from "../assets/images/client3.png";
 import client2 from "../assets/images/client2.png";
 // import elipse4 from '../assets/images/elipse4.svg';
 import Rectangle from "../assets/images/Rectangle.svg";
@@ -320,8 +320,8 @@ const Home = () => {
           <div className="relative w-full h-full laptop:w-2/4 mobile:-mt-20  mobile:ml-5   laptop:-mt-[200px]  laptop:ml-[300px] laptop:h-[300px]">
       {/* Second Image */}
       <img
-        src={client2}
-        alt="client2"
+        src={client3}
+        alt="client3"
               className="w-full h-full object-cover rounded-lg   shadow-lg"
       />
     </div>
@@ -348,12 +348,14 @@ const Home = () => {
         it a preferred choice for clients seeking top-notch services.
       </p>
     </div>
-    <div className="text-orange-600 text-lg tablet:text-xl laptop:text-2xl font-medium flex mobile:mb-10 justify-center mt-4">
+    <div className=" mt-4">
+     
+
       <Link to="/About">
-        <button className="border border-orange-600 rounded-lg w-48 h-12 tablet:w-64 tablet:h-14 laptop:w-80 laptop:h-16 hover:bg-orange-600 hover:text-white transition-colors duration-300">
-          READ MORE
-        </button>
-      </Link>
+                  <button className="bg-orange-500 text-white px-6 py-3 rounded  font-poppins flex justify-start hover:text-secondary transition-colors duration-300">
+                  READ MORE
+                  </button>
+                </Link>
     </div>
   </div>
 </div>

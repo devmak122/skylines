@@ -9,10 +9,12 @@ import trans2 from "../assets/images/Trans2.jpeg";
 import trans3 from "../assets/images/Trans3.jpeg";
 import elipse2 from "../assets/images/elipse2.svg";
 import group from "../assets/images/group.svg";
+import client2 from "../assets/images/client2.png";
+import client1 from "../assets/images/client1.png";
+import { Link } from "react-router-dom";
 // import elipse3 from "../assets/images/elipse3.svg";
 
-import {  Zoom } from 'react-awesome-reveal';
-
+import { Zoom } from "react-awesome-reveal";
 
 const About = () => {
   return (
@@ -20,17 +22,15 @@ const About = () => {
       {/* Mobile View */}
       <div
         className="w-full bg-black bg-opacity-50 justify-center bg-cover mobile:bg-center mobile:bg-cover  bg-center bg-no-repeat flex flex-col items-center"
-        style={{ backgroundImage: `url(${About_phone_bg})`, height: '50vh' }}
+        style={{ backgroundImage: `url(${About_phone_bg})`, height: "50vh" }}
       >
         <h1 className="text-white text-center flex items-center justify-center font-bold  font-poppins text-6xl">
-         
-        About Us
-          </h1>
+          About Us
+        </h1>
       </div>
 
       {/* Tablet and Above View */}
-      
-      
+
       <div className="relative z-10 px-4 tablet:px-8 laptop:px-12 font-Montserrat">
         <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between mb-12">
           <div className="lg:w-[40%] mobile:p-4 laptop:ml-6 mt-18  lg:mb-0">
@@ -39,11 +39,21 @@ const About = () => {
             </h2>
 
             <p className="text-[#656464] mobile:text-center text-base tablet:text-lg  font-poppins laptop:text-[17px]">
-              Skyline Enterprises, a prominent name in India&apos;s transformer industry, was established in 2010 and is headquartered in Koparkhairane, Navi Mumbai. With over a decade of expertise, the company offers a wide range of specialized services, including labour supply for transformer-related activities like winding, core assembly, and tanking. Skyline&apos;s experienced team also excels in on-site servicing and maintenance of transformers, ensuring they meet the highest standards of quality and reliability. Committed to delivering comprehensive support, Skyline Enterprises has earned a reputation for excellence and trustworthiness, making it a preferred choice for clients seeking top-notch transformer solutions.
+              Skyline Enterprises, a prominent name in India&apos;s transformer
+              industry, was established in 2010 and is headquartered in
+              Koparkhairane, Navi Mumbai. With over a decade of expertise, the
+              company offers a wide range of specialized services, including
+              labour supply for transformer-related activities like winding,
+              core assembly, and tanking. Skyline&apos;s experienced team also
+              excels in on-site servicing and maintenance of transformers,
+              ensuring they meet the highest standards of quality and
+              reliability. Committed to delivering comprehensive support,
+              Skyline Enterprises has earned a reputation for excellence and
+              trustworthiness, making it a preferred choice for clients seeking
+              top-notch transformer solutions.
             </p>
           </div>
           <div className="flex justify-center items-center lg:w-1/2 lg:justify-start">
-
             <div className="relative ml-[-265px] w-64 h-64 lg:w-[500px] lg:h-[500px] mt-[-135px] mb-8 lg:mb-0">
               <div className="relative inset-0 rounded-full laptop:ml-60 border-4 bg-primary bg-opacity-[5%] border-none flex items-center justify-center h-[850px] w-[850px] mobile:h-[500px] mobile:w-[500px] mobile:ml-[60px] mobile:mt-[150px]">
                 <div className="relative w-28 h-28 lg:w-[450px] lg:h-[450px] mr-[400px]">
@@ -73,7 +83,6 @@ const About = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
         <div className="relative group">
@@ -93,7 +102,7 @@ const About = () => {
         <div className="container  laptop:-mt-40 mx-auto  py-12">
           {/* Section Header */}
           <div className="flex flex-col items-center text-center mb-12">
-            <p className="text-orange-500 font-bold mobile:text-[30px] tablet:text-[36px] laptop:text-[46px]">
+            <p className="text-orange-500 font-bold mobile:text-[30px] tablet:text-[36px] laptop:text-[44px]">
               Our Services
             </p>
             <div className="bg-[#86c141] mobile:w-[100px] tablet:w-[140px] laptop:w-[105px] h-2 rounded-2xl mt-4"></div>
@@ -104,80 +113,101 @@ const About = () => {
 
           {/* Section Content */}
           <div className="flex justify-center items-center mt-8 relative z-10 font-roboto">
-            <div className="w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-              <Zoom delay={700}>
-
-                <div className="text-center">
-                  <img src={item1} alt="Winding" className="mx-auto h-40 lg:h-52" />
-                  <p className="text-[#39B54A] font-medium text-3xl mt-2">Winding</p>
-                </div>
-              </Zoom>
-              <Zoom delay={700}>
-                <div className="text-center">
-                  <img
-                    src={item2}
-                    alt="Core Assembly"
-                    className="mx-auto h-40 lg:h-52"
-                  />
-                  <p className="text-[#39B54A] font-medium text-3xl mt-2">Core Assembly</p>
-                </div>
-
-              </Zoom>
-
-              <Zoom delay={700}>
-                <div className="text-center">
-                  <img src={item3} alt="CCA" className="mx-auto h-40 lg:h-52" />
-                  <p className="text-[#39B54A] font-medium text-3xl mt-2">CCA</p>
-                </div>
-              </Zoom>
-              <Zoom delay={700}>
-                <div className="text-center">
-                  <img
-                    src={item4}
-                    alt="Tanking and Dispatch"
-                    className="mx-auto h-40 lg:h-52"
-                  />
-                  <p className="text-[#39B54A] font-medium text-3xl mt-2">
-                    Tanking and Dispatch
-                  </p>
-                </div>
-              </Zoom>
-            </div>
-          </div>
-
-        </div>
+  <div className="w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+   
+  <div className="text-center bg-white shadow-md rounded-lg border-[3px] border-customGreen mx-2 leading-10">
+        <img
+          src={item1}
+          alt="Winding"
+          className="mx-auto h-32 lg:h-52 w-32 lg:w-40 object-contain"
+        />
+        <p className="text-[#39B54A] font-medium text-3xl my-4">Winding</p>
       </div>
 
-      
-     
+   
+    <div className="text-center bg-white shadow-md  rounded-lg border-[3px] border-customGreen mx-2  leading-10 ">
+    <img
+          src={item2}
+          alt="Core Assembly"
+          className="mx-auto h-40 lg:h-52 w-40 lg:w-52 object-contain"
+        />
+        <p className="text-[#39B54A] font-medium text-3xl  my-4">Core Assembly</p>
+      </div>
 
-      <Zoom delay={700}>
-        <div className="text-orange-500 text-5xl text-center  font-roboto mt-24 relative z-10">
-           <p className="text-orange-500 font-bold mobile:text-[30px] tablet:text-[36px] laptop:text-[46px]">
-            What We Offer
-            </p>
-          <div className="bg-[#86c141] h-2 w-24 mx-auto rounded-full mt-2"></div>
-        </div>
-        </Zoom>
+   
+    <div className="text-center bg-white shadow-md  rounded-lg border-[3px] border-customGreen mx-2  leading-10 ">
+    <img
+          src={item3}
+          alt="CCA"
+          className="mx-auto h-40 lg:h-52 w-40 lg:w-52 object-contain"
+        />
+        <p className="text-[#39B54A] font-medium text-3xl my-4 ">CCA</p>
+      </div>
 
-      <div className="max-w-4xl mx-auto mt-8 relative   mobile:p-5   font-poppins z-10">
-        <p className="text-[#000000] text-4xl font-medium  text-center">
-            The Core Company Values
+   
+    <div className="text-center bg-white shadow-md  rounded-lg border-[3px] border-customGreen mx-2 leading-10 ">
+    <img
+          src={item4}
+          alt="Tanking and Dispatch"
+          className="mx-auto h-40 lg:h-52 w-40 lg:w-52 object-contain"
+        />
+        <p className="text-[#39B54A] font-medium text-3xl my-4 ">
+          Tanking and Dispatch
         </p>
-     
-          <p className="text-gray-600 text-lg mt-4 text-center">
-            Our core company values are integrity, excellence,
-            customer-centricity, innovation, collaboration, sustainability, and
-            learning and growth. These values shape our actions, guide our
-            decisions, and drive our commitment to delivering exceptional
-            service, fostering innovation, and prioritizing our customers while
-            upholding the highest ethical standards and promoting a sustainable
-            future.
-          </p>
+      </div>
+
+  </div>
+</div>
 
         </div>
       </div>
-    
+
+      <div className="flex flex-col laptop:flex-row items-center  mt-32  mb-5 laptop:items-start justify-between mobile:flex-col px-4 tablet:px-8 laptop:px-0">
+        <div className="relative flex-1 flex flex-col  mobile:mx-8 mobile:mb-10   laptop:mx-0">
+          <div className="relative w-full h-full laptop:w-2/4 laptop:h-[300px] laptop:mb-14">
+            {/* Background Elements */}
+            {/* First Image */}
+            <img
+              src={client2}
+              alt="client2"
+              className="w-full h-full object-cover rounded-lg   laptop:ml-20 mobile:-ml-1  shadow-lg"
+            />
+          </div>
+          <div className="relative w-full h-full laptop:w-2/4 mobile:-mt-20  mobile:ml-5   laptop:-mt-[200px]  laptop:ml-[300px] laptop:h-[300px]">
+            {/* Second Image */}
+            <img
+              src={client1}
+              alt="client1"
+              className="w-full h-full object-cover rounded-lg   shadow-lg"
+            />
+          </div>
+        </div>
+        <div className="flex-1 flex flex-col items-center laptop:mt-10 font-roboto laptop:items-start  px-4 tablet:px-8  laptop:px-10">
+          <p className="text-orange-500 font-bold text-3xl tablet:text-4xl my-4 laptop:text-5xl">
+            What We Offer
+          </p>
+            <p className="bg-[#86c141] w-28 h-1.5 tablet:w-36 laptop:w-20 rounded-full"></p>
+          <div className="flex justify-center items-center mt-4">
+          </div>
+          <div className="mt-4 flex flex-col items-center font-poppins laptop:items-start">
+            <p className="text-[#000000] text-3xl font-medium  mb-3 text-center">
+              The Core Company Values
+            </p>
+            <p className="text-gray-700 text-center laptop:text-left text-base laptop:text-[16px] tablet:text-lg max-w-full tablet:max-w-screen-md laptop:max-w-screen-lg leading-relaxed">
+              Our core company values—integrity, excellence,
+              customer-centricity, innovation, collaboration, sustainability,
+              and continuous learning—drive our actions and decisions. We are
+              committed to delivering exceptional service and innovative
+              solutions, ensuring customer satisfaction. Upholding the highest
+              ethical standards, we promote a sustainable future. Our dedication
+              to continuous learning and growth keeps us ahead in the industry,
+              enabling us to provide the best services. These values guide our
+              company towards excellence and a customer-focused approach.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
