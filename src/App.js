@@ -37,14 +37,14 @@ function App() {
           </>
           
          } />
-        <Route path="/clients" element={
+        <Route path="/Clients" element={
           <>
           <Header />
           <Clients />
         <Footer />
           </>
         } />
-        <Route path="/contact" element={
+        <Route path="/Contact" element={
           
           <>
           

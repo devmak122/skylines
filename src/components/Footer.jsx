@@ -29,13 +29,13 @@ const Footer = () => {
     </h2>
     <div className="menu text-md font-medium text-white text-center md:text-left">
       <h6>
-        <a href="/about-us">About Us</a>
+        <a href="/About">About Us</a>
       </h6>
       <h6>
-        <a href="/clients">Clients</a>
+        <a href="/Clients">Clients</a>
       </h6>
       <h6>
-        <a href="/products">Products</a>
+        <a href="/Products">Products</a>
       </h6>
     </div>
   </div>

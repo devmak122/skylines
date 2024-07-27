@@ -63,7 +63,7 @@ const Home = () => {
                     cursorColor="white"
                   />
                 </div>
-                <Link to="/products">
+                <Link to="/Products">
                   <button className="bg-orange-500 text-white px-6 py-3 rounded  font-poppins flex justify-start hover:text-secondary transition-colors duration-300">
                     View Products
                   </button>

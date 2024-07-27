@@ -46,7 +46,7 @@ const Header = () => {
               HOME
             </NavLink>
             <NavLink
-              to="/about"
+              to="/About"
               onClick={closeMenu}
               className={({ isActive }) =>
                 isActive
@@ -58,7 +58,7 @@ const Header = () => {
               ABOUT
             </NavLink>
             <NavLink
-              to="/products"
+              to="/Products"
               onClick={closeMenu}
               className={({ isActive }) =>
                 isActive
@@ -70,7 +70,7 @@ const Header = () => {
               PRODUCTS
             </NavLink>
             <NavLink
-              to="/clients"
+              to="/Clients"
               onClick={closeMenu}
               className={({ isActive }) =>
                 isActive
@@ -82,7 +82,7 @@ const Header = () => {
                CLIENTS
             </NavLink>
             <NavLink
-              to="/contact"
+              to="/Contact"
               onClick={closeMenu}
               className={({ isActive }) =>
                 isActive
@@ -96,7 +96,7 @@ const Header = () => {
           </nav>
           <div className="flex justify-center mt-4 md:hidden">
             <NavLink
-              to="/contact"
+              to="/Contact"
               onClick={closeMenu}
               className="bg-orange-500 text-white text-lg px-4 py-2 font-semibold rounded mobile:text-sm   hover:bg-orange-600 transition-colors duration-300"
               exact
@@ -107,7 +107,7 @@ const Header = () => {
         </div>
 
         <NavLink
-          to="/contact"
+          to="/Contact"
           className="hidden md:block bg-orange-500 text-[17px]  mobile:text-sm  text-white px-8 py-3 font-semibold rounded hover:bg-orange-600 transition-colors duration-300"
           exact
         >
