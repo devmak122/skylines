@@ -63,11 +63,17 @@ const Home = () => {
                     cursorColor="white"
                   />
                 </div>
-                <Link to="/Products">
+               <div className="flex justify-start gap-20">
+                 <Link to="/Products">
                   <button className="bg-orange-500 text-white px-6 py-3 rounded  font-poppins flex justify-start hover:text-secondary transition-colors duration-300">
-                    View Products
+                  Recovery Collection
                   </button>
                 </Link>
+                <Link to="/Services">
+                  <button className="bg-orange-500 text-white px-6 py-3 rounded  font-poppins flex justify-start hover:text-secondary transition-colors duration-300">
+                  Technician Provider
+                  </button>
+                </Link></div>
               </div>
               <div className="hidden md:block bg-white bg-opacity-35 p-8 rounded-lg text-gray-800 max-w-md font-roboto w-full flex-grow-0">
                 <h3 className="text-2xl font-semibold mb-4 text-center">

@@ -7,7 +7,7 @@ import About from './pages/About';
 import Product from './pages/Product';
 import Clients from './pages/Clients';
 import Contact from './pages/Contact';
-
+import Services from './pages/Services';
 function App() {
   return (
     <Router>
@@ -33,6 +33,14 @@ function App() {
           <>
             <Header />
             <Product />
+            <Footer />
+          </>
+          
+         } />
+        <Route path="/Services" element={
+          <>
+            <Header />
+            <Services />
             <Footer />
           </>
           

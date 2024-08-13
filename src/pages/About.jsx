@@ -12,6 +12,7 @@ import group from "../assets/images/group.svg";
 import client2 from "../assets/images/client2.png";
 import client1 from "../assets/images/client1.png";
 import { Link } from "react-router-dom";
+import { FaClock, FaBalanceScale, FaLightbulb, FaHandshake, FaBullseye } from 'react-icons/fa';
 // import elipse3 from "../assets/images/elipse3.svg";
 
 import { Zoom } from "react-awesome-reveal";
@@ -161,6 +162,70 @@ const About = () => {
 
         </div>
       </div>
+
+
+      {/* our goals */}
+
+      
+
+
+  <div className="container mx-auto py-12  mt-px-4 md:px-0">
+    <div className="text-center mb-10">
+      <h2 className="text-orange-500  text-3xl md:text-4xl font-bold">Our Goals</h2>
+      <div className="mt-2 h-1.5 w-24 md:w-32 mx-auto rounded-full bg-[#86c141]"></div>
+    </div>
+
+    <div className="flex flex-col md:flex-row md:items-start justify-between space-y-8 md:space-y-0 md:space-x-8">
+      {/* Objective 1 */}
+      <div className="md:w-1/5 bg-white shadow-lg rounded-lg p-6 text-center transform  transition-transform">
+        <div className="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+          <FaClock className="text-white text-3xl" />
+        </div>
+        <h3 className="text-xl font-semibold mb-2">Swift Fulfillment</h3>
+        <p className="text-gray-700">To fulfill obligations promptly and ensure timely delivery, maintaining the highest standards of reliability.</p>
+      </div>
+
+      {/* Objective 2 */}
+      <div className="md:w-1/5 bg-white shadow-lg rounded-lg p-6 text-center transform  transition-transform">
+        <div className="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+          <FaBalanceScale className="text-white text-3xl" />
+        </div>
+        <h3 className="text-xl font-semibold mb-2">Fairness and Integrity</h3>
+        <p className="text-gray-700">To act with fairness and integrity in all dealings, ensuring ethical practices and building trust with others.</p>
+      </div>
+
+      {/* Objective 3 */}
+      <div className="md:w-1/5 bg-white shadow-lg rounded-lg p-6 text-center transform  transition-transform">
+        <div className="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+          <FaLightbulb className="text-white text-3xl" />
+        </div>
+        <h3 className="text-xl font-semibold mb-2">Innovation</h3>
+        <p className="text-gray-700">To innovate continually and surpass expectations by embracing new ideas and staying ahead of trends..</p>
+      </div>
+
+      {/* Objective 4 */}
+      <div className="md:w-1/5 bg-white shadow-lg rounded-lg p-6 text-center transform  transition-transform">
+        <div className="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+          <FaHandshake className="text-white text-3xl" />
+        </div>
+        <h3 className="text-xl font-semibold mb-2">Collaboration</h3>
+        <p className="text-gray-700">To work together and collaborate effectively with all stakeholders, ensuring shared goals and successful outcomes.</p>
+      </div>
+
+      {/* Objective 5 */}
+      <div className="md:w-1/5 bg-white shadow-lg rounded-lg p-6 text-center transform  transition-transform">
+        <div className="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+          <FaBullseye className="text-white text-3xl" />
+        </div>
+        <h3 className="text-xl font-semibold mb-2"> Excellence</h3>
+        <p className="text-gray-700">To commit to excellence in every aspect of our work, outstanding results and exceeding expectations.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
 
       <div className="flex flex-col laptop:flex-row items-center  mt-32  mb-5 laptop:items-start justify-between mobile:flex-col px-4 tablet:px-8 laptop:px-0">
         <div className="relative flex-1 flex flex-col  mobile:mx-8 mobile:mb-10   laptop:mx-0">

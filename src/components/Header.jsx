@@ -70,6 +70,18 @@ const Header = () => {
               PRODUCTS
             </NavLink>
             <NavLink
+              to="/Services"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-green-400 transition-colors duration-300 p-4 md:p-0"
+                  : "text-black hover:text-green-400 transition-colors duration-300 p-4 md:p-0"
+              }
+              exact
+            >
+              SERVICES
+            </NavLink>
+            <NavLink
               to="/Clients"
               onClick={closeMenu}
               className={({ isActive }) =>
