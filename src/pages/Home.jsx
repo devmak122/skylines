@@ -13,7 +13,7 @@ import team from "../assets/images/2.svg";
 import quality from "../assets/images/3.svg";
 import { Link } from "react-router-dom";
 import Typewriter from "react-typewriter-effect";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
@@ -22,7 +22,7 @@ const Home = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitSuccessful, isSubmitting },
+    formState: { errors, isSubmitting },
   } = useForm();
 
   const apiKey = "62805f85-5dbe-464b-bfc3-1fc755d8c495";

@@ -15,6 +15,7 @@
     "flowbite": "^2.4.1",
     "framer-motion": "^11.3.8",
     "react": "^18.3.1",
+    "react-archer": "^4.4.0",
     "react-awesome-reveal": "^4.2.12",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.52.1",
@@ -22,8 +23,10 @@
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.24.1",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.30.2",
     "react-transition-group": "^4.4.5",
     "react-typewriter-effect": "^1.1.0",
+    "slick-carousel": "^1.8.1",
     "three": "^0.166.1",
     "web-vitals": "^2.1.4"
   },

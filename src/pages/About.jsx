@@ -7,15 +7,11 @@ import item4 from "../assets/images/item4.svg";
 import trans1 from "../assets/images/trans1.jpeg";
 import trans2 from "../assets/images/Trans2.jpeg";
 import trans3 from "../assets/images/Trans3.jpeg";
-import elipse2 from "../assets/images/elipse2.svg";
 import group from "../assets/images/group.svg";
 import client2 from "../assets/images/client2.png";
 import client1 from "../assets/images/client1.png";
-import { Link } from "react-router-dom";
 import { FaClock, FaBalanceScale, FaLightbulb, FaHandshake, FaBullseye } from 'react-icons/fa';
-// import elipse3 from "../assets/images/elipse3.svg";
 
-import { Zoom } from "react-awesome-reveal";
 
 const About = () => {
   return (

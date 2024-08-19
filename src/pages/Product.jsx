@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import pro_bg from "../assets/images/pro_bg.png";
 import pro4 from "../assets/images/pro4.jpg";
 import product4 from "../assets/images/product2.jpg";
