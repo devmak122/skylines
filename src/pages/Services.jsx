@@ -78,28 +78,97 @@ const ServicePage = () => {
       </section>
 
       {/* Process Section */}
-      <section className="text-center py-16 bg-purple-800">
-        <h2 className="text-4xl font-bold mb-8">Our Process For Delivering Results</h2>
-        <div className="flex justify-center space-x-8">
-          <div className="flex flex-col items-center">
-            <div className="bg-purple-600 text-2xl font-bold rounded-full h-16 w-16 flex items-center justify-center">01</div>
-            <p className="mt-4">Make An Appointment</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="bg-purple-600 text-2xl font-bold rounded-full h-16 w-16 flex items-center justify-center">02</div>
-            <p className="mt-4">Meet Our Team</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="bg-purple-600 text-2xl font-bold rounded-full h-16 w-16 flex items-center justify-center">03</div>
-            <p className="mt-4">Get Consultation</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="bg-purple-600 text-2xl font-bold rounded-full h-16 w-16 flex items-center justify-center">04</div>
-            <p className="mt-4">Start Project</p>
+      <div className="relative bg-gradient-to-b from-purple-900 to-gray-900 text-white py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-sm font-semibold uppercase tracking-wide">How We Work</h2>
+          <h1 className="text-4xl font-extrabold">Our Process For Delivering Results</h1>
+          <p className="mt-4 text-lg text-gray-300">
+            Collaboratively, we listen, strategize, and execute tailored solutions, ensuring transparency, 
+            communication, and satisfaction throughout the process.
+          </p>
+        </div>
+        <div className="relative flex justify-center items-center">
+          <div className="flex flex-row items-center space-y-6 gap-16">
+            {/* Step 1 */}
+            <div className="relative -mt-28"> {/* Move up */}
+              <div className="rounded-full bg-gradient-to-r from-purple-700 to-pink-500 p-10 text-center z-10 relative">
+                <span className="text-4xl font-bold">01.</span>
+                <p className="mt-2">Make An<br/> Appointment</p>
+              </div>
+              <svg
+                className="absolute top-1/2 mt-10 -ml-10 left-full transform -translate-y-1/2 z-0"
+                width="120"
+                height="60"
+                viewBox="0 0 120 60"
+              >
+                <path
+                  d="M 0,30 Q 60,60 120,30"
+                  fill="transparent"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeDasharray="5,5"
+                />
+              </svg>
+            </div>
+            {/* Step 2 */}
+            <div className="relative mt-8"> {/* Move down */}
+              <div className="rounded-full bg-gradient-to-r from-purple-700 to-pink-500 p-10 text-center z-10 relative">
+                <span className="text-4xl font-bold">02.</span>
+                <p className="mt-2">Meet an Our<br/>Team</p>
+              </div>
+              <svg
+                className="absolute top-1/2 mt-10 -ml-10 left-full transform -translate-y-1/2 z-0"
+                width="120"
+                height="60"
+                viewBox="0 0 120 60"
+              >
+                <path
+                  d="M 0,30 Q 60,60 120,30"
+                  fill="transparent"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeDasharray="5,5"
+                />
+              </svg>
+            </div>
+            {/* Step 3 */}
+            <div className="relative -mt-28"> {/* Move up */}
+              <div className="rounded-full bg-gradient-to-r from-purple-700 to-pink-500 p-10 text-center z-10 relative">
+                <span className="text-4xl font-bold">03.</span>
+                <p className="mt-2">Get <br/>Consultation</p>
+              </div>
+              <svg
+                className="absolute top-1/2 left-full transform -translate-y-1/2 z-0"
+                width="120"
+                height="60"
+                viewBox="0 0 120 60"
+              >
+                <path
+                  d="M 0,30 Q 60,60 120,30"
+                  fill="transparent"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeDasharray="5,5"
+                />
+              </svg>
+            </div>
+            {/* Step 4 */}
+            <div className="relative mt-8"> {/* Move down */}
+              <div className="rounded-full bg-gradient-to-r from-purple-700 to-pink-500 p-10 text-center z-10 relative">
+                <span className="text-4xl font-bold">04.</span>
+                <p className=" mt-2">Start <br/> the Project</p>
+              </div>
+            </div>
           </div>
         </div>
-        <button className="mt-8 px-6 py-3 bg-pink-600 text-white font-semibold rounded-md">Contact Now</button>
-      </section>
+        <div className="mt-12 text-center">
+          <button className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full">
+            Contact Now
+          </button>
+        </div>
+      </div>
+    </div>
 
       {/* Footer */}
     
