@@ -9,6 +9,7 @@ import pro6 from "../assets/images/pro6.jpg";
 
 
 
+
 const products = [
   {
     title: "20 MVA Core Coil",

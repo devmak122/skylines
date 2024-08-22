@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -6,6 +6,28 @@ import services from "../assets/images/services.svg";
 import banking from "../assets/images/banking.jpg";
 import Ellipse160 from "../assets/images/Ellipse-160.png";
 import commit from "../assets/images/1.svg";
+import Volvo from "../assets/images/VOLVO FINANC.png";
+import Sunadaram from "../assets/images/SUNDARAM FINANCE.png";
+import TataCapital from "../assets/images/TATA CAPITAL LTD.png";
+import Tatamotors from "../assets/images/tata-motors-finance.png";
+import Poonawala from "../assets/images/PoonawalaLogo (2).png";
+import Masfin from "../assets/images/MAS_Financial_Services_.png";
+import Orix from "../assets/images/ORIX.png";
+import mahindra from "../assets/images/MAHINDRA.png";
+import Kotak from "../assets/images/KOTAK MAHINDRA.png";
+import Kotakfin from "../assets/images/KOGTA_FINANCE-removebg-preview.png";
+import nissan from "../assets/images/Logo_Nissan_Motor_Company.png";
+import idfc from "../assets/images/IDFC BANK.png";
+import Hdb from "../assets/images/HDB FINANCE.png";
+import Hinduja from "../assets/images/HINDUJA.png";
+import IKF from "../assets/images/IKF FINANCE.png";
+import fortune from "../assets/images/FORTUNE FINANCE.png";
+import Equitas from "../assets/images/Equitas-Small-Finance-Bank-1 (2).png";
+import Daimler from "../assets/images/DAIMLER.png";
+import car from "../assets/images/CAR TRADE.png";
+import Bajaj from "../assets/images/BAJAJ FINANCE.png";
+import Boruka from "../assets/images/BORUKA.png";
+import cholaman from "../assets/images/cholamandalam-logo (2).png";
 
 const ServicePage = () => {
   const settings = {
@@ -17,7 +39,76 @@ const ServicePage = () => {
     autoplay: true,
     autoplaySpeed: 3000,
   };
+  const images = [
+    {
+      imgSrc: Poonawala,
+    },
+    {
+      imgSrc: Tatamotors,
+    },
+    {
+      imgSrc: TataCapital,
+    },
+    {
+      imgSrc: Sunadaram,
+    },
+    {
+      imgSrc: Volvo,
+    },
+    
+    {
+      imgSrc: cholaman,
+    },
+    {
+      imgSrc: Boruka,
+    },
+    {
+      imgSrc: Bajaj,
+    },
+    {
+      imgSrc: car,
+    },
+    {
+      imgSrc: Daimler,
+    },
+    {
+      imgSrc: Equitas,
+    },
+    {
+      imgSrc: fortune,
+    },
+    {
+      imgSrc: IKF,
+    },
+    {
+      imgSrc: Hinduja,
+    },
+    {
+      imgSrc: Hdb,
+    },
+    {
+      imgSrc: idfc,
+    },
+    {
+      imgSrc: nissan,
+    },
+    {
+      imgSrc: Kotakfin,
+    },
+    {
+      imgSrc: Kotak,
+    },
+    {
+      imgSrc: mahindra,
+    },
 
+    {
+      imgSrc: Masfin,
+    },
+    {
+      imgSrc: Orix,
+    },
+  ];
   const IncrementingCounter = ({ from = 1, to = 85, duration = 2000 }) => {
     const [count, setCount] = useState(from);
 
@@ -39,7 +130,7 @@ const ServicePage = () => {
 
     return (
       <div className="rounded-[100%] w-32 h-32 flex justify-center items-center finalbg-gradient-to-r from-primary to-green-500 p-10 text-center z-10 relative">
-        <p className="text-4xl font-bold">{String(count).padStart(2, '0')}%</p>
+        <p className="text-4xl font-bold">{String(count).padStart(2, "0")}%</p>
       </div>
     );
   };
@@ -52,82 +143,81 @@ const ServicePage = () => {
         style={{ backgroundImage: `url(${services})`, height: "50vh" }}
       >
         <div className="text-white text-center flex items-center justify-center font-roboto font-bold text-6xl">
-         Services
+          Services
         </div>
       </div>
 
       {/* Sliding Cards Section */}
       <div className="flex flex-col items-center text-center mt-12">
-            <p className="text-orange-500 font-bold font-roboto mobile:text-[30px] tablet:text-[36px] laptop:text-[46px]">
-            How We Work
-            </p>
-            <div className="bg-[#86c141] mobile:w-[100px] tablet:w-[140px] laptop:w-[105px] h-2 rounded-2xl mb-6"></div>
-            
+        <p className="text-orange-500 font-bold font-roboto mobile:text-[30px] tablet:text-[36px] laptop:text-[46px]">
+          How We Work
+        </p>
+        <div className="bg-[#86c141] mobile:w-[100px] tablet:w-[140px] laptop:w-[105px] h-2 rounded-2xl mb-6"></div>
+      </div>
+      <div className="py-16 px-28">
+        <Slider {...settings}>
+          <div className="p-4">
+            <div className="bg-white text-center shadow-xl rounded-md p-8 border border-t-1  hover:shadow-2xl  duration-300">
+              <img
+                src={commit}
+                alt="commit"
+                className="w-[100px] h-[100px] object-cover text-center rounded-lg mx-auto mb-4"
+              />
+              <h3 className="text-xl font-semibold mb-2">
+                Vehicle Loan Recovery
+              </h3>
+              <p>
+                We specialize in vehicle loan recovery
+                <br /> for banks and NBFCs,
+                <br />
+                ensuring efficient asset recovery.
+              </p>
+            </div>
           </div>
-          <div className="py-16 px-28">
-  <Slider {...settings}>
-    <div className="p-4">
-      <div className="bg-white text-center shadow-xl rounded-md p-8 border border-t-1  hover:shadow-2xl  duration-300">
-        <img
-          src={commit}
-          alt="commit"
-          className="w-[100px] h-[100px] object-cover text-center rounded-lg mx-auto mb-4"
-        />
-        <h3 className="text-xl font-semibold mb-2">Vehicle Loan Recovery</h3>
-        <p>
-          We specialize in vehicle loan recovery
-          <br /> for banks and NBFCs,
-          <br />
-          ensuring efficient asset recovery.
-        </p>
+          <div className="p-4">
+            <div className="bg-white text-center shadow-xl rounded-md p-8  border border-t-1 hover:shadow-2xl  duration-300">
+              <img
+                src={commit}
+                alt="commit"
+                className="w-[100px] h-[100px] object-cover text-center rounded-lg mx-auto mb-4"
+              />
+              <h3 className="text-xl font-semibold mb-2">Asset Tracing</h3>
+              <p>
+                Our team excels at tracing defaulted
+                <br />
+                assets, helping banks and NBFCs locate and
+                <br />
+                recover assets effectively.
+              </p>
+            </div>
+          </div>
+          <div className="p-4">
+            <div className="bg-white text-center shadow-xl rounded-md p-8 border border-t-1  hover:shadow-2xl  duration-300">
+              <img
+                src={commit}
+                alt="commit"
+                className="w-[100px] h-[100px] object-cover text-center rounded-lg mx-auto mb-4"
+              />
+              <h3 className="text-xl font-semibold mb-2">Legal Assistance</h3>
+              <p>
+                We offer legal support for loan recovery,
+                <br /> ensuring compliance with all
+                <br />
+                relevant regulations and laws.
+              </p>
+            </div>
+          </div>
+          {/* Add more cards similarly for other services */}
+        </Slider>
       </div>
-    </div>
-    <div className="p-4">
-      <div className="bg-white text-center shadow-xl rounded-md p-8  border border-t-1 hover:shadow-2xl  duration-300">
-        <img
-          src={commit}
-          alt="commit"
-          className="w-[100px] h-[100px] object-cover text-center rounded-lg mx-auto mb-4"
-        />
-        <h3 className="text-xl font-semibold mb-2">Asset Tracing</h3>
-        <p>
-          Our team excels at tracing defaulted
-          <br />
-          assets, helping banks and NBFCs locate and
-          <br />
-          recover assets effectively.
-        </p>
-      </div>
-    </div>
-    <div className="p-4">
-      <div className="bg-white text-center shadow-xl rounded-md p-8 border border-t-1  hover:shadow-2xl  duration-300">
-        <img
-          src={commit}
-          alt="commit"
-          className="w-[100px] h-[100px] object-cover text-center rounded-lg mx-auto mb-4"
-        />
-        <h3 className="text-xl font-semibold mb-2">Legal Assistance</h3>
-        <p>
-          We offer legal support for loan recovery,
-          <br /> ensuring compliance with all
-          <br />
-          relevant regulations and laws.
-        </p>
-      </div>
-    </div>
-    {/* Add more cards similarly for other services */}
-  </Slider>
-</div>
-
 
       {/* Image and Content Section */}
       <div className="flex flex-col items-center text-center mt-12">
-            <p className="text-orange-500 font-bold  font-roboto  mobile:text-[30px] tablet:text-[36px] laptop:text-[46px]">
-            Collections Agency
-            </p>
-            <div className="bg-[#86c141] mobile:w-[100px] tablet:w-[140px] laptop:w-[105px] h-2 rounded-2xl mb-6"></div>
-            
-          </div>
+        <p className="text-orange-500 font-bold  font-roboto  mobile:text-[30px] tablet:text-[36px] laptop:text-[46px]">
+          Collections Agency
+        </p>
+        <div className="bg-[#86c141] mobile:w-[100px] tablet:w-[140px] laptop:w-[105px] h-2 rounded-2xl mb-6"></div>
+      </div>
       <div className="bg-white py-20 relative">
         <div className="bg-transparent relative">
           {/* Green Circle Background */}
@@ -199,10 +289,9 @@ const ServicePage = () => {
       {/* Process Section */}
       <div className="relative bg-white text-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
           <div className="flex flex-col items-center text-center mb-12">
             <p className="text-orange-500 font-bold font-roboto mobile:text-[30px] tablet:text-[36px] laptop:text-[46px]">
-            How We Work
+              How We Work
             </p>
             <div className="bg-[#86c141] mobile:w-[100px] tablet:w-[140px] laptop:w-[105px] h-2 rounded-2xl mb-6"></div>
             <h1 className="text-4xl font-extrabold">
@@ -225,7 +314,6 @@ const ServicePage = () => {
                     Initial Consultation
                   </p>
                 </div>
-             
               </div>
               {/* Step 2 */}
               <div className="relative mt-8">
@@ -237,21 +325,20 @@ const ServicePage = () => {
                     Asset Tracing and Recovery Plan
                   </p>
                   <svg
-                  className="absolute top-1/2 -mt-20 -ml-36  transform -translate-y-1/5  z-1"
-                  width="120"
-                  height="60"
-                  viewBox="0 0 120 60"
-                >
-                  <path
-                    d="M 0,30 Q 60,0 120,30"
-                    fill="transparent"
-                    stroke="black"
-                    strokeWidth="2"
-                    strokeDasharray="5,5"
-                  />
-                </svg>
+                    className="absolute top-1/2 -mt-20 -ml-36  transform -translate-y-1/5  z-1"
+                    width="120"
+                    height="60"
+                    viewBox="0 0 120 60"
+                  >
+                    <path
+                      d="M 0,30 Q 60,0 120,30"
+                      fill="transparent"
+                      stroke="black"
+                      strokeWidth="2"
+                      strokeDasharray="5,5"
+                    />
+                  </svg>
                 </div>
-               
                 <svg
                   className="absolute top-1/2 mt-1 ml-3  left-[90%] transform  -translate-y-3/4 -rotate-12  z-0"
                   width="120"
@@ -274,22 +361,22 @@ const ServicePage = () => {
                 <div className="w-44 h-44 rounded-full bg-gradient-to-r from-primary to-green-500  shadow-lg p-10 text-center z-10 relative">
                   <span className="text-4xl font-bold">03.</span>
                   <p className="mt-2 text-sm font-semibold font-roboto">
-                    Legal Assistance 
+                    Legal Assistance
                   </p>
-                <svg
-                  className="absolute top-1/2 mt-3 -ml-1 left-full transform -translate-y-1/2 rotate-12 z-0"
-                  width="120"
-                  height="60"
-                  viewBox="0 0 120 60"
-                >
-                  <path
-                    d="M 0,30 Q 60,0 120,30"
-                    fill="transparent"
-                    stroke="black"
-                    strokeWidth="2"
-                    strokeDasharray="5,5"
-                  />
-                </svg>
+                  <svg
+                    className="absolute top-1/2 mt-3 -ml-1 left-full transform -translate-y-1/2 rotate-12 z-0"
+                    width="120"
+                    height="60"
+                    viewBox="0 0 120 60"
+                  >
+                    <path
+                      d="M 0,30 Q 60,0 120,30"
+                      fill="transparent"
+                      stroke="black"
+                      strokeWidth="2"
+                      strokeDasharray="5,5"
+                    />
+                  </svg>
                 </div>
               </div>
               <div className="relative mt-8">
@@ -298,7 +385,7 @@ const ServicePage = () => {
                 <div className="w-44 h-44 rounded-full bg-gradient-to-r from-primary to-green-500  shadow-lg p-10 text-center z-10 relative">
                   <span className="text-4xl font-bold">04.</span>
                   <p className="mt-2 text-sm font-semibold font-roboto">
-                  Final Recovery
+                    Final Recovery
                   </p>
                 </div>
               </div>
@@ -306,8 +393,40 @@ const ServicePage = () => {
           </div>
         </div>
       </div>
-
-      
+      {/* Process Section */}
+      <div className="relative bg-white text-black py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col items-center text-center mb-12">
+            <p className="text-orange-500 font-bold font-roboto mobile:text-[30px] tablet:text-[36px] laptop:text-[46px]">
+              Curtrently Working with
+            </p>
+            <div className="bg-[#86c141] mobile:w-[100px] tablet:w-[140px] laptop:w-[105px] h-2 rounded-2xl mb-6"></div>
+          </div>
+         
+          <div className="w-11/12 max-w-[1536px] mx-auto mt-20 relative h-24 overflow-hidden">
+    <div className="absolute inset-0 mask-gradient">
+      {images.map((image, index) => (
+        <div
+          key={index}
+          className="absolute w-52 h-24 bg-red-500 rounded-lg"
+          style={{
+            left: `calc(100% + ${index * 200}px)`,
+            animation: `scrollLeft 30s linear infinite`,
+            animationDelay: `calc(30s / ${images.length} * (${images.length} - ${index}))`,
+          }}
+        >
+          <img
+            src={image.imgSrc}
+            alt={`item-${index}`}
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+   
+        </div>
+      </div>
     </div>
   );
 };
