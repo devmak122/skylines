@@ -38,7 +38,7 @@ const ServicePage = () => {
     }, [from, to, duration]);
 
     return (
-      <div className="rounded-[100%] w-32 h-32 flex justify-center items-center bg-primary p-10 text-center z-10 relative">
+      <div className="rounded-[100%] w-32 h-32 flex justify-center items-center finalbg-gradient-to-r from-primary to-green-500 p-10 text-center z-10 relative">
         <p className="text-4xl font-bold">{String(count).padStart(2, '0')}%</p>
       </div>
     );
@@ -152,7 +152,7 @@ const ServicePage = () => {
 
             {/* Right Side: Content Blocks */}
             <div className="flex flex-col justify-center space-y-8">
-              <div className="bg-white flex justify-center items-center gap-8 p-8 rounded-lg shadow-lg">
+              <div className="bg-white flex justify-center items-center gap-8 p-8 rounded-lg border border-t-2  shadow-lg">
                 <IncrementingCounter from={1} to={85} duration={2000} />
                 <div>
                   <h2 className="text-2xl font-bold text-orange-500">
@@ -165,13 +165,13 @@ const ServicePage = () => {
                 </div>
               </div>
 
-              <div className="bg-white flex justify-center items-center gap-8 p-8  rounded-lg shadow-lg">
+              <div className="bg-white flex justify-center items-center gap-8 p-8 border border-t-2  rounded-lg shadow-lg">
                 <IncrementingCounter from={1} to={95} duration={2000} />
                 <div>
                   <h2 className="text-2xl font-bold text-orange-500">
                     Guaranteed Success
                   </h2>
-                  <p className="mt-4 text-gray-700">
+                  <p className="mt-4 text-gray-700 ">
                     We provide reliable solutions with a 95% guarantee for
                     successful recoveries, offering peace of mind to our
                     clients.
@@ -179,7 +179,7 @@ const ServicePage = () => {
                 </div>
               </div>
 
-              <div className="bg-white flex justify-center items-center gap-8 p-8 rounded-lg shadow-lg">
+              <div className="bg-white flex justify-center items-center gap-8 p-8 border border-t-2 rounded-lg shadow-lg">
                 <IncrementingCounter from={1} to={65} duration={2000} />
                 <div>
                   <h2 className="text-2xl font-bold text-orange-500">
