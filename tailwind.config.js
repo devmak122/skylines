@@ -3,6 +3,15 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        scrollLeft: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-2000%)" }, 
+        },
+      },
+      animation: {
+        scrollLeft: "scrollLeft 300s linear infinite",
+      },
       backgroundImage: {
         "footer-bg": "url(./assets/images/footer_bg.svg)",
       },
@@ -17,13 +26,12 @@ module.exports = {
         scrollTablet: { min: "600px", max: "800px" },
         headerDev: { min: "1501px", max: "1655px" },
         appDevice: { min: "1026px", max: "1233px" },
-        // 'consoleRes': {}
       },
       fontFamily: {
         poppins: ["Poppins"],
         Montserrat: ["Montserrat"],
         lora: ["Lora"],
-        roboto: ["Roboto"], // Added Roboto font
+        roboto: ["Roboto"],
       },
       fontSize: {
         h1: ["60px", "1.2em"],
@@ -34,14 +42,14 @@ module.exports = {
         h6: ["20px", "1.2em"],
         body: ["18px", "1.2em"],
       },
-    },
-    colors: {
-      transparent: "transparent",
-      current: "currentColor",
-      primary: "#39B54A",
-      secondary: "#FFBB6B",
-      tertiary: "#FDF3DA",
-      white: "#FFFFFF",
+      colors: {
+        transparent: "transparent",
+        current: "currentColor",
+        primary: "#39B54A",
+        secondary: "#FFBB6B",
+        tertiary: "#FDF3DA",
+        white: "#FFFFFF",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],
