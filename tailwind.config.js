@@ -6,7 +6,7 @@ module.exports = {
       keyframes: {
         scrollLeft: {
           "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-2000%)" }, 
+          "100%": { transform: "translateX(-2000%)" },
         },
       },
       animation: {
@@ -16,16 +16,10 @@ module.exports = {
         "footer-bg": "url(./assets/images/footer_bg.svg)",
       },
       screens: {
-        laptop: { min: "1026px", max: "1920px" },
-        tablet: { min: "800px", max: "1025px" },
+        laptop: { min: "1068px", max: "1920px" },
+        tablet: { min: "768px", max: "1066px" },
         mobile: { min: "300px", max: "962px" },
-        customMobile: { min: "600px", max: "800px" },
-        newMobile: { min: "300px", max: "600px" },
-        verifyCustom: { min: "1023px", max: "1300px" },
-        verifyCustomMob: { min: "300px", max: "400px" },
-        scrollTablet: { min: "600px", max: "800px" },
-        headerDev: { min: "1501px", max: "1655px" },
-        appDevice: { min: "1026px", max: "1233px" },
+
       },
       fontFamily: {
         poppins: ["Poppins"],

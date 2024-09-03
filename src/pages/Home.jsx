@@ -63,7 +63,7 @@ const Home = () => {
                     cursorColor="white"
                   />
                 </div>
-               <div className="flex justify-start gap-20">
+               <div className="flex justify-start mobile:flex-col mobile:gap-7 gap-20">
                  <Link to="/Products">
                   <button className="bg-orange-500 text-white px-6 py-3 rounded  font-poppins flex justify-start hover:text-secondary transition-colors duration-300">
                   Recovery Collection
