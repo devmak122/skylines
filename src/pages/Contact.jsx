@@ -35,7 +35,7 @@ const ContactUs = () => {
   const [message, setMessage] = React.useState('');
 
   return (
-    <div className='font-semibold  '>
+    <div className='font-semibold overflow-hidden  '>
       <div
         className="w-full bg-black bg-opacity-50  justify-center mobile:bg-center mobile:bg-cover bg-cover bg-no-repeat flex flex-col  mb-36 items-center"
         style={{ backgroundImage: `url(${con_bg})`, height: '50vh' }}      >
