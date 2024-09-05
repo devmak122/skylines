@@ -35,7 +35,7 @@ const About = () => {
               Skyline Enterprises holds the future of transformers
             </h2>
 
-            <p className="text-[#656464] mobile:text-center text-base tablet:text-lg  font-poppins laptop:text-[17px]">
+            <p className="text-[#656464]  mobile:text-start  text-base tablet:text-lg  font-poppins laptop:text-[17px]">
               Skyline Enterprises, a prominent name in India&apos;s transformer
               industry, was established in 2010 and is headquartered in
               Koparkhairane, Navi Mumbai. With over a decade of expertise, the
@@ -254,7 +254,7 @@ const About = () => {
             <p className="text-[#000000] text-3xl font-medium  mb-3 text-center">
               The Core Company Values
             </p>
-            <p className="text-gray-700 text-center laptop:text-left text-base laptop:text-[16px] tablet:text-lg max-w-full tablet:max-w-screen-md laptop:max-w-screen-lg leading-relaxed">
+            <p className="text-gray-700 text-center  mobile:text-start laptop:text-left text-base laptop:text-[16px] tablet:text-lg max-w-full tablet:max-w-screen-md laptop:max-w-screen-lg leading-relaxed">
               Our core company values—integrity, excellence,
               customer-centricity, innovation, collaboration, sustainability,
               and continuous learning—drive our actions and decisions. We are

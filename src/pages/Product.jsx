@@ -37,7 +37,7 @@ const products = [
     description: "Repairing of 25 MVA Transformer"
   },
   {
-    title: "11 MVA Furnace",
+    title: "11 MVA  Furnace Transformer",
     imgSrc: pro6,
     description: "11 MVA Furnace Transformer"
   }
@@ -60,7 +60,7 @@ const Product = () => {
           <div
             key={index}
             className="relative flex flex-col  items-center justify-center p-4 bg-white  leading-10">
-            <div className="absolute laptop:top-[25px] laptop:left-[55px] mobile:top-[10px] mobile:left-[10px] w-16 h-16 border-t-[5px] border-l-[5px] border-orange-500 mobile:mt-[70px] mobile:ml-[-10px] laptop:mt-[90px] laptop:ml-[20px]"></div>
+            <div className="absolute laptop:top-[25px] laptop:left-[55px] mobile:top-[90px] mobile:left-[18px] w-16 h-16 border-t-[5px] border-l-[5px] border-orange-500 mobile:mt-[70px] mobile:ml-[-10px] laptop:mt-[90px] laptop:ml-[20px]"></div>
             <p
               className="text-[35px] font-semibold font-roboto text-primary mobile:text-center mt-10 mb-10  z-10"
                          >
@@ -69,10 +69,10 @@ const Product = () => {
             <img
               src={product.imgSrc}
               alt={product.title}
-              className="w-3/5 h-[200px] object-cover bg-cover   z-10 "
+              className="w-3/5 mobile:w-11/12 h-[200px] object-cover bg-cover   z-10 "
              
             />
-            <div className="absolute laptop:bottom-[20px] laptop:right-[56px] mobile:bottom-[10px] mobile:right-[10px] w-16 h-16 border-b-[5px] border-r-[5px] border-orange-500 mobile:mb-[170px] mobile:mr-[-10px] laptop:mb-[150px] laptop:mr-[20px]"></div>
+            <div className="absolute laptop:bottom-[20px] laptop:right-[56px] mobile:bottom-[50px] mobile:right-[18px] w-16 h-16 border-b-[5px] border-r-[5px] border-orange-500 mobile:mb-[170px] mobile:mr-[-10px] laptop:mb-[150px] laptop:mr-[20px]"></div>
             <p
               className="text-[22px] font-semibold font-poppins text-primary mobile:text-center mt-12 mb-9 z-10">
               {product.description}

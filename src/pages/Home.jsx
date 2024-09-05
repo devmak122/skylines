@@ -52,18 +52,15 @@ const Home = () => {
           <div className="container mx-auto flex flex-col md:flex-row items-center justify-evenly h-full px-4 py-8">
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-evenly h-full px-4 py-8">
               <div className="text-white max-w-lg md:mb-0 text-center flex-grow">
-                <div className="text-xl md:text-xl font-light mobile:text-sm text-start mb-4 font-poppins">
+                <div className="text-xl md:text-xl mobile:text-center font-light mobile:text-sm text-start mb-4 font-poppins">
                   <p className="">One of the most trusted companies in India</p>
                 </div>
-                <div className="text-5xl laptop:text-center mobile:text-start md:text-4xl  font-roboto font-bold mobile:text-4xl mb-6">
-                  <Typewriter
-                    text="Skyline Enterprises is a transformer manufacturer and supplier in India."
-                    typeSpeed={100}
-                    startDelay={500}
-                    cursorColor="white"
-                  />
+                <div className="text-5xl laptop:text-start mobile:text-center md:text-4xl  font-roboto font-bold mobile:text-4xl mb-6">
+                  <h1>
+                    Skyline Enterprises is a transformer manufacturer and supplier in India.</h1>
+                   
                 </div>
-               <div className="flex justify-start mobile:flex-col mobile:gap-7 gap-20">
+               <div className="flex justify-start mobile:flex-col mobile:item-center mobile:gap-7 gap-20">
                  <Link to="/Products">
                   <button className="bg-orange-500 text-white px-6 py-3 rounded  font-poppins flex justify-start hover:text-secondary transition-colors duration-300">
                   Recovery Collection
@@ -184,7 +181,7 @@ const Home = () => {
               Skyline Transforming Your Energy Solutions
             </h2>
 
-            <p className="text-[#656464] mobile:text-center text-base tablet:text-lg  font-poppins laptop:text-[17px]">
+            <p className="text-[#656464] mobile:text-Start text-base tablet:text-lg  font-poppins laptop:text-[17px]">
               Skyline Enterprisesstands out as a dynamic and powerful entity,
               boasting a team of highly skilled professionals with extensive
               experience collaborating with major corporations. Our experts are
@@ -340,7 +337,7 @@ const Home = () => {
       <p className="bg-[#86c141] w-28 h-1.5 tablet:w-36 laptop:w-20 rounded-full"></p>
     </div>
     <div className="mt-4 flex flex-col items-center font-poppins laptop:items-start">
-      <p className="text-gray-700 text-center laptop:text-left text-base laptop:text-[16px] tablet:text-lg max-w-full tablet:max-w-screen-md laptop:max-w-screen-lg leading-relaxed">
+      <p className="text-gray-700 text-center  mobile:text-start laptop:text-left text-base laptop:text-[16px] tablet:text-lg max-w-full tablet:max-w-screen-md laptop:max-w-screen-lg leading-relaxed">
         Skyline Enterprises, a prominent name in India's transformer
         industry, was established in 2010 and is headquartered in
         Koparkhairane, Navi Mumbai. With over a decade of expertise, the
