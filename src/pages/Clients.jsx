@@ -30,7 +30,7 @@ const Clients = () => (
         <div className="container mx-auto py-8 ">
             <h1 className="text-center text-[48px] font-bold mb-8 font-roboto text-primary pb-12">Our Client's</h1>
 
-            <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-6 mx-4 my-4 ml-11 mobile:ml-[-5px]">
+            <div className="grid grid-cols-1 tablet:grid-cols-3 laptop:grid-cols-4 gap-6 mx-4 my-4 ml-11 mobile:ml-[-5px]">
                 <div className="relative group">
                     <div className="absolute flex flex-col items-center justify-center p-4 bg-white shadow-md w-[296px] h-[215px] rounded-lg border-[3px] border-customGreen mx-2 my-2 leading-10">
                         <img src={ABB} alt="ABB" className="h-20" />

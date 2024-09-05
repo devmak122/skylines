@@ -31,9 +31,10 @@ const Header = () => {
           <img src={logo} alt="logo" className="h-14" />
         </NavLink>
 
+        {/* Mobile and Tablet Menu Button */}
         <button
           onClick={handleMenuToggle}
-          className="tablet:block laptop:hidden text-gray-500 hover:text-black focus:outline-none"
+          className="block laptop:hidden text-gray-500 hover:text-black focus:outline-none"
         >
           <svg
             className="w-8 h-8"
@@ -50,19 +51,22 @@ const Header = () => {
           </svg>
         </button>
 
+        {/* Dropdown Menu for Mobile and Tablet */}
         <div
           className={`${
             isMenuOpen ? "block" : "hidden"
-          } tablet:block laptop:hidden absolute top-16 left-0 w-full bg-white shadow-lg tablet:relative tablet:top-0 tablet:shadow-none`}
+          } laptop:hidden absolute top-24 tablet:top-20 left-0 w-full bg-white shadow-lg`}
         >
-          <nav className="flex flex-col tablet:flex-row tablet:space-x-6 text-[17px] font-semibold items-center">
+          <nav
+            className="grid grid-cols-1 tablet:grid-cols-1 gap-5 text-[17px] font-semibold items-center  text-center p-4 tablet:p-6"
+          >
             <NavLink
               to="/"
               onClick={closeMenu}
               className={({ isActive }) =>
                 isActive
-                  ? "text-green-400 transition-colors duration-300 p-4 tablet:p-0"
-                  : "text-black hover:text-green-400 transition-colors duration-300 p-4 tablet:p-0"
+                  ? "text-green-400 transition-colors duration-300"
+                  : "text-black hover:text-green-400 transition-colors duration-300"
               }
               exact
             >
@@ -73,8 +77,8 @@ const Header = () => {
               onClick={closeMenu}
               className={({ isActive }) =>
                 isActive
-                  ? "text-green-400 transition-colors duration-300 p-4 tablet:p-0"
-                  : "text-black hover:text-green-400 transition-colors duration-300 p-4 tablet:p-0"
+                  ? "text-green-400 transition-colors duration-300"
+                  : "text-black hover:text-green-400 transition-colors duration-300"
               }
               exact
             >
@@ -85,8 +89,8 @@ const Header = () => {
               onClick={closeMenu}
               className={({ isActive }) =>
                 isActive
-                  ? "text-green-400 transition-colors duration-300 p-4 tablet:p-0"
-                  : "text-black hover:text-green-400 transition-colors duration-300 p-4 tablet:p-0"
+                  ? "text-green-400 transition-colors duration-300"
+                  : "text-black hover:text-green-400 transition-colors duration-300"
               }
               exact
             >
@@ -97,8 +101,8 @@ const Header = () => {
               onClick={closeMenu}
               className={({ isActive }) =>
                 isActive
-                  ? "text-green-400 transition-colors duration-300 p-4 tablet:p-0"
-                  : "text-black hover:text-green-400 transition-colors duration-300 p-4 tablet:p-0"
+                  ? "text-green-400 transition-colors duration-300"
+                  : "text-black hover:text-green-400 transition-colors duration-300"
               }
               exact
             >
@@ -109,8 +113,8 @@ const Header = () => {
               onClick={closeMenu}
               className={({ isActive }) =>
                 isActive
-                  ? "text-green-400 transition-colors duration-300 p-4 tablet:p-0"
-                  : "text-black hover:text-green-400 transition-colors duration-300 p-4 tablet:p-0"
+                  ? "text-green-400 transition-colors duration-300"
+                  : "text-black hover:text-green-400 transition-colors duration-300"
               }
               exact
             >
@@ -121,8 +125,8 @@ const Header = () => {
               onClick={closeMenu}
               className={({ isActive }) =>
                 isActive
-                  ? "text-green-400 transition-colors duration-300 p-4 tablet:p-0"
-                  : "text-black hover:text-green-400 transition-colors duration-300 p-4 tablet:p-0"
+                  ? "text-green-400 transition-colors duration-300"
+                  : "text-black hover:text-green-400 transition-colors duration-300"
               }
               exact
             >
@@ -130,6 +134,7 @@ const Header = () => {
             </NavLink>
           </nav>
 
+          {/* Mobile CTA Button */}
           <div className="flex justify-center mt-4 tablet:hidden">
             <NavLink
               to="/Contact"
@@ -142,6 +147,66 @@ const Header = () => {
           </div>
         </div>
 
+        {/* Laptop View Links */}
+        <nav className="hidden laptop:flex space-x-20 text-[17px] font-semibold items-center">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "text-green-400 transition-colors duration-300"
+                : "text-black hover:text-green-400 transition-colors duration-300"
+            }
+            exact
+          >
+            HOME
+          </NavLink>
+          <NavLink
+            to="/About"
+            className={({ isActive }) =>
+              isActive
+                ? "text-green-400 transition-colors duration-300"
+                : "text-black hover:text-green-400 transition-colors duration-300"
+            }
+            exact
+          >
+            ABOUT
+          </NavLink>
+          <NavLink
+            to="/Products"
+            className={({ isActive }) =>
+              isActive
+                ? "text-green-400 transition-colors duration-300"
+                : "text-black hover:text-green-400 transition-colors duration-300"
+            }
+            exact
+          >
+            PRODUCTS
+          </NavLink>
+          <NavLink
+            to="/Services"
+            className={({ isActive }) =>
+              isActive
+                ? "text-green-400 transition-colors duration-300"
+                : "text-black hover:text-green-400 transition-colors duration-300"
+            }
+            exact
+          >
+            SERVICES
+          </NavLink>
+          <NavLink
+            to="/Clients"
+            className={({ isActive }) =>
+              isActive
+                ? "text-green-400 transition-colors duration-300"
+                : "text-black hover:text-green-400 transition-colors duration-300"
+            }
+            exact
+          >
+            CLIENTS
+          </NavLink>
+        </nav>
+
+        {/* Laptop CTA Button */}
         <NavLink
           to="/Contact"
           className="hidden laptop:block bg-orange-500 text-[17px] text-white px-8 py-3 font-semibold rounded hover:bg-orange-600 transition-colors duration-300"

@@ -189,14 +189,14 @@ const ServicePage = () => {
             </div>
 
             {/* Grid Container for Image and Content Blocks */}
-            <div className="relative grid grid-cols-1 laptop:grid-cols-2 gap-8 z-10">
+            <div className="relative grid grid-cols-1  laptop:grid-cols-2 gap-8 z-10">
               {/* Left Side: Image with Ellipse Shape */}
-              <div className="relative w-full h-auto  mobile:hidden laptop:flex laptop:items-center laptop:justify-center">
+              <div className="relative w-full h-auto tablet:hidden  mobile:hidden laptop:flex laptop:items-center laptop:justify-center">
                 {/* Banking Image with Mask */}
                 <img
                   src={banking}
                   alt="banking"
-                  className="w-[543px]  h-[610px] max-w-xs mobile:max-w-xs tablet:max-w-md laptop:max-w-lg object-cover"
+                  className="w-[540px]  h-[610px]  mobile:max-w-xs tablet:max-w-md object-cover"
                   style={{
                     maskImage: `url(${Ellipse160})`,
                     WebkitMaskImage: `url(${Ellipse160})`,
