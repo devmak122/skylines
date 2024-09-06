@@ -8,6 +8,8 @@ import Product from './pages/Product';
 import Clients from './pages/Clients';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
+import BackToTopButton from './components/BackToTopButton';
+
 function App() {
   return (
     <Router>
@@ -20,6 +22,7 @@ function App() {
             <Home />
             </div>
             <Footer />
+            <BackToTopButton />
           </>
         } />
         <Route path="/About" element={
@@ -27,6 +30,7 @@ function App() {
           <Header />
           <About />
             <Footer />
+            <BackToTopButton />
           </>
         } />
         <Route path="/Products" element={
@@ -34,6 +38,7 @@ function App() {
             <Header />
             <Product />
             <Footer />
+            <BackToTopButton />
           </>
           
          } />
@@ -42,6 +47,7 @@ function App() {
             <Header />
             <Services />
             <Footer />
+            <BackToTopButton />
           </>
           
          } />
@@ -50,6 +56,7 @@ function App() {
           <Header />
           <Clients />
         <Footer />
+        <BackToTopButton />
           </>
         } />
         <Route path="/Contact" element={
@@ -59,6 +66,7 @@ function App() {
           <Header/>
           <Contact />
             <Footer />
+            <BackToTopButton />
           </>
           } />
       </Routes>

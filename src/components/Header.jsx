@@ -120,18 +120,7 @@ const Header = () => {
             >
               CLIENTS
             </NavLink>
-            <NavLink
-              to="/Contact"
-              onClick={closeMenu}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-green-400 transition-colors duration-300"
-                  : "text-black hover:text-green-400 transition-colors duration-300"
-              }
-              exact
-            >
-              CONTACT
-            </NavLink>
+         
           </nav>
 
           {/* Mobile CTA Button */}

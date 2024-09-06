@@ -12,8 +12,9 @@ import commit from "../assets/images/1.svg"
 import team from "../assets/images/2.svg";
 import quality from "../assets/images/3.svg";
 import { Link } from "react-router-dom";
-import Typewriter from "react-typewriter-effect";
+
 import { Zoom } from "react-awesome-reveal";
+import BackToTopButton from '../components/BackToTopButton';
 
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
@@ -366,6 +367,8 @@ const Home = () => {
       {/* design on images */}
 
       {/* About Us Section */}
+
+      <BackToTopButton />
     </div>
   );
 };

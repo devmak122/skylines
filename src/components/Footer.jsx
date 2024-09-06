@@ -8,6 +8,7 @@ import facebook from "../assets/images/facebook.svg";
 import Twitter from "../assets/images/Twitter.svg";
 import instagram from "../assets/images/instagram.svg";
 import { Link } from "react-router-dom";
+import BackToTopButton from '../components/BackToTopButton';
 
 const Footer = () => {
   return (
@@ -109,6 +110,7 @@ const Footer = () => {
         </div>
       </footer>
     </div>
+      
   );
 };
 
