@@ -165,7 +165,7 @@ const About = () => {
       
 
 
-  <div className="container mx-auto py-12  mt-px-4 md:px-0">
+  <div className="container mx-auto py-14  mt-px-4 md:px-0">
     <div className="text-center mb-10">
       <h2 className="text-orange-500  text-3xl md:text-4xl font-bold">Our Goals</h2>
       <div className="mt-2 h-1.5 w-24 md:w-32 mx-auto rounded-full bg-[#86c141]"></div>

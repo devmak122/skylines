@@ -38,6 +38,7 @@ const BackToTopButton = () => {
           className=" px-4 py-3 bg-green-500 text-white rounded-full shadow-lg hover:bg-orange-600 focus:outline-none"
         >
          <FontAwesomeIcon icon={faArrowUp}  solid bounce /> 
+       
         </button>
       )}
     </div>
