@@ -55,7 +55,7 @@ const Footer = () => {
       <div className="flex items-center gap-1 pb-1 justify-center lg:justify-start">
         <img src={phone} alt="phone" />:
         <h4 className="">
-          <a href="tel:+919100412727">+91 910041272727</a>
+          <a href="tel:+919100412727">+91 99671 52040</a>
         </h4>
       </div>
       <div className="flex gap-1 items-start justify-center lg:justify-start">

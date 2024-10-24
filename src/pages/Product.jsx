@@ -52,7 +52,7 @@ const Product = () => {
       >
         <div
           className="text-white text-center flex items-center justify-center  font-roboto font-bold text-6xl">
-         Products
+         Services
         </div>
       </div>
       <div className="grid mobile:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-6 mx-4 my-4 p-6">
